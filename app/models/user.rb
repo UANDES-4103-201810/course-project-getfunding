@@ -6,9 +6,11 @@ class User < ApplicationRecord
 end
 
 def type
-  if user_type != "admin" || user_type == "normal"
-    puts("invalid")
-    throw :abort
+  if user_type != "admin"
+    if user_type != "normal"
+      puts("invalid")
+      throw :abort
+    end
   end
 end
 
