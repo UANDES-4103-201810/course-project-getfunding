@@ -17,7 +17,7 @@ class ProyectsControllerTest < ActionDispatch::IntegrationTest
 
   test "should create proyect" do
     assert_difference('Proyect.count') do
-      post proyects_url, params: { proyect: { category: @proyect.category, description: @proyect.description, expiration_date: @proyect.expiration_date, goal: @proyect.goal, money_colected: @proyect.money_colected, name: @proyect.name, start_date: @proyect.start_date, state: @proyect.state } }
+      post proyects_url, params: { proyect: { User_id: @proyect.User_id, category: @proyect.category, description: @proyect.description, expiration_date: @proyect.expiration_date, goal: @proyect.goal, money_colected: @proyect.money_colected, name: @proyect.name, start_date: @proyect.start_date, state: @proyect.state } }
     end
 
     assert_redirected_to proyect_url(Proyect.last)
@@ -34,7 +34,7 @@ class ProyectsControllerTest < ActionDispatch::IntegrationTest
   end
 
   test "should update proyect" do
-    patch proyect_url(@proyect), params: { proyect: { category: @proyect.category, description: @proyect.description, expiration_date: @proyect.expiration_date, goal: @proyect.goal, money_colected: @proyect.money_colected, name: @proyect.name, start_date: @proyect.start_date, state: @proyect.state } }
+    patch proyect_url(@proyect), params: { proyect: { User_id: @proyect.User_id, category: @proyect.category, description: @proyect.description, expiration_date: @proyect.expiration_date, goal: @proyect.goal, money_colected: @proyect.money_colected, name: @proyect.name, start_date: @proyect.start_date, state: @proyect.state } }
     assert_redirected_to proyect_url(@proyect)
   end
 

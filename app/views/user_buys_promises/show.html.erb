@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>User:</strong>
+  <%= @user_buys_promise.User %>
+</p>
+
+<p>
+  <strong>Promise:</strong>
+  <%= @user_buys_promise.Promise %>
+</p>
+
+<%= link_to 'Edit', edit_user_buys_promise_path(@user_buys_promise) %> |
+<%= link_to 'Back', user_buys_promises_path %>

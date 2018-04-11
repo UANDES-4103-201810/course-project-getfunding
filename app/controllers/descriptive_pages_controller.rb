@@ -69,6 +69,6 @@ class DescriptivePagesController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def descriptive_page_params
-      params.require(:descriptive_page).permit(:link)
+      params.require(:descriptive_page).permit(:Proyect_id, :link)
     end
 end

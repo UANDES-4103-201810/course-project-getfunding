@@ -1,4 +1,11 @@
 class Proyect < ApplicationRecord
+  belongs_to :User
+  has_one :descriptive_page
+  has_many :user_funds_proyects
+  has_many :admin_administrate_proyects
+  has_many :promises
+  has_many :images
+  has_many :videos
   validates :goal,  numericality: {:greater_than_or_equal_to => 0}
   validates :money_colected,  numericality: {:greater_than_or_equal_to => 0}
   validates :name, length: {in: 2..20}

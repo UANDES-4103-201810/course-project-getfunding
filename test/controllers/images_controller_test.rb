@@ -17,7 +17,7 @@ class ImagesControllerTest < ActionDispatch::IntegrationTest
 
   test "should create image" do
     assert_difference('Image.count') do
-      post images_url, params: { image: {  } }
+      post images_url, params: { image: { Proyect_id: @image.Proyect_id } }
     end
 
     assert_redirected_to image_url(Image.last)
@@ -34,7 +34,7 @@ class ImagesControllerTest < ActionDispatch::IntegrationTest
   end
 
   test "should update image" do
-    patch image_url(@image), params: { image: {  } }
+    patch image_url(@image), params: { image: { Proyect_id: @image.Proyect_id } }
     assert_redirected_to image_url(@image)
   end
 

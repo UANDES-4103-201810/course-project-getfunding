@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<h1>User Buys Promises</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>User</th>
+      <th>Promise</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @user_buys_promises.each do |user_buys_promise| %>
+      <tr>
+        <td><%= user_buys_promise.User %></td>
+        <td><%= user_buys_promise.Promise %></td>
+        <td><%= link_to 'Show', user_buys_promise %></td>
+        <td><%= link_to 'Edit', edit_user_buys_promise_path(user_buys_promise) %></td>
+        <td><%= link_to 'Destroy', user_buys_promise, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New User Buys Promise', new_user_buys_promise_path %>

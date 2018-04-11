@@ -1,0 +1,27 @@
+<%= form_with(model: user_buys_promise, local: true) do |form| %>
+  <% if user_buys_promise.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(user_buys_promise.errors.count, "error") %> prohibited this user_buys_promise from being saved:</h2>
+
+      <ul>
+      <% user_buys_promise.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :User_id %>
+    <%= form.text_field :User_id, id: :user_buys_promise_User_id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :Promise_id %>
+    <%= form.text_field :Promise_id, id: :user_buys_promise_Promise_id %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

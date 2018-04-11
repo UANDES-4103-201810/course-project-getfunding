@@ -1,14 +1,17 @@
 Rails.application.routes.draw do
+  resources :admin_administrate_proyects
+  resources :user_funds_proyects
+  resources :user_buys_promises
+  resources :descriptive_pages
+  resources :videos
+  resources :images
+  resources :promises
+  resources :proyects
+  resources :profiles
+  resources :admins
   resources :users
   get 'home/index'
 
   root to: "home#index"
-  resources :promises
-  resources :admins
-  resources :videos
-  resources :descriptive_pages
-  resources :images
-  resources :proyects
-  resources :profiles
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end

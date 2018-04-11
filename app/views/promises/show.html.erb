@@ -1,6 +1,11 @@
 <p id="notice"><%= notice %></p>
 
 <p>
+  <strong>Proyect:</strong>
+  <%= @promise.Proyect %>
+</p>
+
+<p>
   <strong>Value:</strong>
   <%= @promise.value %>
 </p>
@@ -8,11 +13,6 @@
 <p>
   <strong>Condition:</strong>
   <%= @promise.condition %>
-</p>
-
-<p>
-  <strong>Buyer:</strong>
-  <%= @promise.buyer %>
 </p>
 
 <%= link_to 'Edit', edit_promise_path(@promise) %> |

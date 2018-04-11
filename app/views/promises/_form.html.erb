@@ -12,6 +12,11 @@
   <% end %>
 
   <div class="field">
+    <%= form.label :Proyect_id %>
+    <%= form.text_field :Proyect_id, id: :promise_Proyect_id %>
+  </div>
+
+  <div class="field">
     <%= form.label :value %>
     <%= form.number_field :value, id: :promise_value %>
   </div>
@@ -19,11 +24,6 @@
   <div class="field">
     <%= form.label :condition %>
     <%= form.text_area :condition, id: :promise_condition %>
-  </div>
-
-  <div class="field">
-    <%= form.label :buyer %>
-    <%= form.text_field :buyer, id: :promise_buyer %>
   </div>
 
   <div class="actions">

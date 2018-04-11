@@ -1,4 +1,5 @@
 class Profile < ApplicationRecord
+  belongs_to :User
   validates :age,  numericality: {:greater_than_or_equal_to => 0}
   validates :name, length: {in: 2..20}
   validates :nacionality, length: {in: 2..20}

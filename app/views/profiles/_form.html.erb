@@ -12,6 +12,11 @@
   <% end %>
 
   <div class="field">
+    <%= form.label :User_id %>
+    <%= form.text_field :User_id, id: :profile_User_id %>
+  </div>
+
+  <div class="field">
     <%= form.label :name %>
     <%= form.text_field :name, id: :profile_name %>
   </div>
@@ -23,7 +28,7 @@
 
   <div class="field">
     <%= form.label :age %>
-    <%= form.text_field :age, id: :profile_age %>
+    <%= form.number_field :age, id: :profile_age %>
   </div>
 
   <div class="field">

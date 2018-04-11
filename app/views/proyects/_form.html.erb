@@ -12,6 +12,11 @@
   <% end %>
 
   <div class="field">
+    <%= form.label :User_id %>
+    <%= form.text_field :User_id, id: :proyect_User_id %>
+  </div>
+
+  <div class="field">
     <%= form.label :name %>
     <%= form.text_field :name, id: :proyect_name %>
   </div>
@@ -28,12 +33,12 @@
 
   <div class="field">
     <%= form.label :goal %>
-    <%= form.text_field :goal, id: :proyect_goal %>
+    <%= form.number_field :goal, id: :proyect_goal %>
   </div>
 
   <div class="field">
     <%= form.label :money_colected %>
-    <%= form.text_field :money_colected, id: :proyect_money_colected %>
+    <%= form.number_field :money_colected, id: :proyect_money_colected %>
   </div>
 
   <div class="field">

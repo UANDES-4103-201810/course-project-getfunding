@@ -69,6 +69,6 @@ class ProyectsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def proyect_params
-      params.require(:proyect).permit(:name, :description, :category, :goal, :money_colected, :expiration_date, :state, :start_date)
+      params.require(:proyect).permit(:User_id, :name, :description, :category, :goal, :money_colected, :expiration_date, :state, :start_date)
     end
 end

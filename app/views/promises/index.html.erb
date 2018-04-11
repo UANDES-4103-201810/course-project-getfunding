@@ -7,9 +7,9 @@
 <table>
   <thead>
     <tr>
+      <th>Proyect</th>
       <th>Value</th>
       <th>Condition</th>
-      <th>Buyer</th>
       <th colspan="3"></th>
     </tr>
   </thead>
@@ -17,9 +17,9 @@
   <tbody>
     <% @promises.each do |promise| %>
       <tr>
+        <td><%= promise.Proyect %></td>
         <td><%= promise.value %></td>
         <td><%= promise.condition %></td>
-        <td><%= promise.buyer %></td>
         <td><%= link_to 'Show', promise %></td>
         <td><%= link_to 'Edit', edit_promise_path(promise) %></td>
         <td><%= link_to 'Destroy', promise, method: :delete, data: { confirm: 'Are you sure?' } %></td>

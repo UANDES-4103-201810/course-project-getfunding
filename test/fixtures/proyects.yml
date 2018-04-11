@@ -1,21 +1,23 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
+  User: one
   name: MyString
   description: MyText
   category: MyString
-  goal: 
-  money_colected: 
-  expiration_date: 2018-04-09
+  goal: 1
+  money_colected: 1
+  expiration_date: 2018-04-11
   state: MyString
-  start_date: 2018-04-09
+  start_date: 2018-04-11
 
 two:
+  User: two
   name: MyString
   description: MyText
   category: MyString
-  goal: 
-  money_colected: 
-  expiration_date: 2018-04-09
+  goal: 1
+  money_colected: 1
+  expiration_date: 2018-04-11
   state: MyString
-  start_date: 2018-04-09
+  start_date: 2018-04-11

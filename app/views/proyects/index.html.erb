@@ -7,6 +7,7 @@
 <table>
   <thead>
     <tr>
+      <th>User</th>
       <th>Name</th>
       <th>Description</th>
       <th>Category</th>
@@ -22,6 +23,7 @@
   <tbody>
     <% @proyects.each do |proyect| %>
       <tr>
+        <td><%= proyect.User %></td>
         <td><%= proyect.name %></td>
         <td><%= proyect.description %></td>
         <td><%= proyect.category %></td>
