@@ -13,7 +13,7 @@ class Proyect < ApplicationRecord
   validates :category, length: {:minimum => 2}
   before_save  do start_later end
   before_save do state_validation end
-
+  validates :name, uniqueness: true
 end
 def start_later
   puts start_date.to_date
@@ -28,7 +28,7 @@ end
 
 def state_validation
   if state != "waiting"
-    if state != "aproved"
+    if state != "approved"
       puts("invalid")
       throw :abort
     end
