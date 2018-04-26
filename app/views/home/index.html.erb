@@ -1,22 +1,172 @@
-<h1>Eggshell</h1>
-<p>Cristobal Erenchun</p>
-<p>Felipe Gomez</p>
-<h2>
-  <td> <%= link_to "Home", home_index_path  %></td>
-</h2>
-<h2> Users</h2>
-<td> <%= link_to "Users index", users_path  %></td>
-<td> <%= link_to "New user", new_user_path  %></td>
 
-<h2> Proyects</h2>
-<td> <%= link_to "Proyects index", proyects_path  %></td>
-<td> <%= link_to "New proyect", new_proyect_path  %></td>
+<!DOCTYPE html>
+<html>
 
-<h2> Promises</h2>
-<td> <%= link_to "Promises index", promises_path  %></td>
-<td> <%= link_to "New promise", new_promise_path %></td>
+<head>
+  <link rel="stylesheet" type="text/css" href="mystyle.css">
+  <title> prueba</title>
+  <style>
+    h1 {
+      color: Blue;
+    }
 
-<h2> Profile</h2>
-<td> <%= link_to "Profiles index", profiles_path  %></td>
-<td> <%= link_to "New profile", new_profile_path  %></td>
+    .nombre {
+      color: white;
+      font-size: 60px;
+      width: 50%;
+    }
 
+    .header {
+      background-color: #3333ff;
+      padding: 10px;
+      display: table;
+      width: 100%;
+
+
+
+    }
+
+    .nav {
+      overflow: hidden;
+      background-color: #3333ff;
+      padding: 20px;
+    }
+
+    .nav a {
+      width: 60px;
+      font-size: 20px;
+      font-weight: 900;
+      float: left;
+      color: black;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      border-radius:10px;
+
+    }
+
+    .nav a:hover {
+      background-color: white;
+      color: blue;
+      display: inline;
+    }
+
+
+
+    .box {
+      width: 100px;
+      border: 5px solid blue;
+      padding: 50px;
+      margin: 5px;
+      border-radius: 25px;
+    }
+
+
+    .box a:hover {
+
+      font-weight:900;
+      color: lightblue;
+    }
+
+
+    .flex-container {
+      flex-wrap: wrap;
+      width: 1300px;
+      display: flex;
+      background: white;
+
+    }
+
+    .busqueda{
+      background-color: #cce6ff;
+      float: right;
+      border-radius:10px;
+    }
+
+    .columnheader1{
+      float: left;
+      width: 50%;
+
+    }
+
+    .columnheader2{
+      float:right ;
+      width: 50%;
+
+
+    }
+
+    .row:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+
+    .buscar {
+      background-color:#cce6ff;
+      float: right;
+      border-radius:10px;
+    }
+
+  </style>
+</head>
+<body>
+<div class = "header">
+  <div class = "row">
+    <div class = "columnheader1">
+      <h1 class = "nombre"> Eggshell </h1>
+    </div>
+    <div class = "columnheader2">
+      <button class = "buscar"> Search</button>
+      <textarea class = "busqueda" rows = "1" cols="40"> Project name</textarea>
+
+    </div>
+  </div>
+</div>
+<div class = "nav">
+
+  <%= link_to 'Home', home_index_path %>
+  <%= link_to 'Proyects', proyects_path %>
+  <%= link_to 'User', users_path %>
+  <%= link_to 'Log In', sessions_new_path %>
+
+</div>
+<h1>Best Proyects of the week</h1>
+
+<div class = "flex-container">
+
+<div class="box">
+  <%=  link_to 'Proyect', proyects_path %>
+</div>
+  <div class="box">
+    <%= link_to 'Proyect', proyects_path %>
+  </div>
+  <div class="box">
+    <%= link_to 'Proyect', proyects_path %>
+  </div>
+  <div class="box">
+    <%= link_to 'Proyect', proyects_path %>
+  </div>
+  <div class="box">
+    <%= link_to 'Proyect', proyects_path %>
+  </div>
+  <div class="box">
+    <%= link_to 'Proyect', proyects_path %>
+  </div>
+  <div class="box">
+    <%= link_to 'Proyect', proyects_path %>
+  </div>
+  <div class="box">
+    <%= link_to 'Proyect', proyects_path %>
+  </div>
+  <div class="box">
+    <%= link_to 'Proyect', proyects_path %>
+  </div>
+  <div class="box">
+    <%= link_to 'Proyect', proyects_path %>
+  </div>
+</div>
+
+
+</body>
+</html>
