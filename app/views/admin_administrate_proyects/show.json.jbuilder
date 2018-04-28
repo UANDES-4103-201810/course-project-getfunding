@@ -1,1 +1,0 @@
-json.partial! "admin_administrate_proyects/admin_administrate_proyect", admin_administrate_proyect: @admin_administrate_proyect

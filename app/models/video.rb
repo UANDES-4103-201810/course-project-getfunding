@@ -1,3 +1,3 @@
 class Video < ApplicationRecord
-  belongs_to :Proyect
+  belongs_to :Project
 end

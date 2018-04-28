@@ -1,0 +1,22 @@
+<%= form_with(model: featured, local: true) do |form| %>
+  <% if featured.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(featured.errors.count, "error") %> prohibited this featured from being saved:</h2>
+
+      <ul>
+      <% featured.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :Project_id %>
+    <%= form.text_field :Project_id, id: :featured_Project_id %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

@@ -1,3 +1,3 @@
 class Image < ApplicationRecord
-  belongs_to :Proyect
+  belongs_to :Project
 end

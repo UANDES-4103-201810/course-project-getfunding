@@ -1,11 +1,11 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  Proyect: one
+  Project: one
   value: 1
-  condition: MyText
+  condition: MyString
 
 two:
-  Proyect: two
+  Project: two
   value: 1
-  condition: MyText
+  condition: MyString

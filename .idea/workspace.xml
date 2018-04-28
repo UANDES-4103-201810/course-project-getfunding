@@ -3,12 +3,127 @@
   <component name="ChangeListManager">
     <list default="true" id="33ff5f6a-20e8-4fb8-b3de-e66b4482208a" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Gemfile" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Gemfile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/assets/stylesheets/application.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/application_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/application_controller.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/sessions_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/sessions_controller.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/assets/javascripts/admin_administrate_proyects.coffee" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/assets/javascripts/admins.coffee" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/assets/javascripts/proyects.coffee" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/assets/javascripts/user_funds_proyects.coffee" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/assets/stylesheets/admin_administrate_proyects.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/assets/stylesheets/admins.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/assets/stylesheets/proyects.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/assets/stylesheets/user_funds_proyects.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/admin_administrate_proyects_controller.rb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/admins_controller.rb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/descriptive_pages_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/descriptive_pages_controller.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/images_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/images_controller.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/promises_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/promises_controller.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/proyects_controller.rb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/user_funds_proyects_controller.rb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/users_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/users_controller.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/videos_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/videos_controller.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/helpers/admin_administrate_proyects_helper.rb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/helpers/admins_helper.rb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/helpers/proyects_helper.rb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/helpers/user_funds_proyects_helper.rb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/models/admin.rb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/models/admin_administrate_proyect.rb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/models/descriptive_page.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/descriptive_page.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/models/image.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/image.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/models/promise.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/promise.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/models/proyect.rb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/models/user.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/user.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/models/user_funds_proyect.rb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/models/video.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/video.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/admin_administrate_proyects/_admin_administrate_proyect.json.jbuilder" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/admin_administrate_proyects/_form.html.erb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/admin_administrate_proyects/edit.html.erb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/admin_administrate_proyects/index.html.erb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/admin_administrate_proyects/index.json.jbuilder" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/admin_administrate_proyects/new.html.erb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/admin_administrate_proyects/show.html.erb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/admin_administrate_proyects/show.json.jbuilder" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/admins/_admin.json.jbuilder" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/admins/_form.html.erb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/admins/edit.html.erb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/admins/index.html.erb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/admins/index.json.jbuilder" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/admins/new.html.erb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/admins/show.html.erb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/admins/show.json.jbuilder" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/descriptive_pages/_descriptive_page.json.jbuilder" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/descriptive_pages/_descriptive_page.json.jbuilder" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/descriptive_pages/_form.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/descriptive_pages/_form.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/descriptive_pages/index.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/descriptive_pages/index.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/descriptive_pages/show.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/descriptive_pages/show.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/home/index.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/home/index.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/images/_form.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/images/_form.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/images/_image.json.jbuilder" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/images/_image.json.jbuilder" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/images/index.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/images/index.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/images/show.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/images/show.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/promises/_form.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/promises/_form.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/promises/_promise.json.jbuilder" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/promises/_promise.json.jbuilder" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/promises/index.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/promises/index.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/promises/show.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/promises/show.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/proyects/_form.html.erb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/proyects/_proyect.json.jbuilder" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/proyects/edit.html.erb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/proyects/index.html.erb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/proyects/index.json.jbuilder" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/proyects/new.html.erb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/proyects/show.html.erb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/proyects/show.json.jbuilder" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/app/views/sessions/new.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/sessions/new.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/user_funds_proyects/_form.html.erb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/user_funds_proyects/_user_funds_proyect.json.jbuilder" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/user_funds_proyects/edit.html.erb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/user_funds_proyects/index.html.erb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/user_funds_proyects/index.json.jbuilder" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/user_funds_proyects/new.html.erb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/user_funds_proyects/show.html.erb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/user_funds_proyects/show.json.jbuilder" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/users/_form.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/users/_form.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/users/_user.json.jbuilder" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/users/_user.json.jbuilder" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/users/index.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/users/index.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/users/show.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/users/show.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/videos/_form.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/videos/_form.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/videos/_video.json.jbuilder" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/videos/_video.json.jbuilder" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/videos/index.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/videos/index.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/videos/show.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/videos/show.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/routes.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/routes.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/migrate/20180411120908_create_users.rb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/migrate/20180411221133_create_admins.rb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/migrate/20180411221808_create_proyects.rb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/migrate/20180411221917_create_promises.rb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/migrate/20180411221951_create_images.rb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/migrate/20180411221959_create_videos.rb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/migrate/20180411222029_create_descriptive_pages.rb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/migrate/20180411222452_create_user_funds_proyects.rb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/migrate/20180411222609_create_admin_administrate_proyects.rb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/schema.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/schema.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/controllers/admin_administrate_proyects_controller_test.rb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/controllers/admins_controller_test.rb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/controllers/descriptive_pages_controller_test.rb" beforeDir="false" afterPath="$PROJECT_DIR$/test/controllers/descriptive_pages_controller_test.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/controllers/images_controller_test.rb" beforeDir="false" afterPath="$PROJECT_DIR$/test/controllers/images_controller_test.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/controllers/promises_controller_test.rb" beforeDir="false" afterPath="$PROJECT_DIR$/test/controllers/promises_controller_test.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/controllers/proyects_controller_test.rb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/controllers/user_funds_proyects_controller_test.rb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/controllers/users_controller_test.rb" beforeDir="false" afterPath="$PROJECT_DIR$/test/controllers/users_controller_test.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/controllers/videos_controller_test.rb" beforeDir="false" afterPath="$PROJECT_DIR$/test/controllers/videos_controller_test.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/fixtures/admin_administrate_proyects.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/fixtures/admins.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/fixtures/descriptive_pages.yml" beforeDir="false" afterPath="$PROJECT_DIR$/test/fixtures/descriptive_pages.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/fixtures/images.yml" beforeDir="false" afterPath="$PROJECT_DIR$/test/fixtures/images.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/fixtures/promises.yml" beforeDir="false" afterPath="$PROJECT_DIR$/test/fixtures/promises.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/fixtures/proyects.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/fixtures/user_funds_proyects.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/fixtures/users.yml" beforeDir="false" afterPath="$PROJECT_DIR$/test/fixtures/users.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/fixtures/videos.yml" beforeDir="false" afterPath="$PROJECT_DIR$/test/fixtures/videos.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/models/admin_administrate_proyect_test.rb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/models/admin_test.rb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/models/proyect_test.rb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/models/user_funds_proyect_test.rb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/system/admin_administrate_proyects_test.rb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/system/admins_test.rb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/system/proyects_test.rb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/system/user_funds_proyects_test.rb" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.bundle/" />
     <ignored path="$PROJECT_DIR$/components/" />
@@ -25,56 +140,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="new.html.erb" pinned="false" current-in-tab="false">
+      <file leaf-file-name="new.html.erb" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/sessions/new.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="396">
-              <caret line="37" lean-forward="true" selection-start-line="37" selection-end-line="37" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="application.scss" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/application.scss">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="288">
-              <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Gemfile" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Gemfile">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="828">
-              <caret line="55" column="6" selection-start-line="55" selection-start-column="6" selection-end-line="55" selection-end-column="6" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="sessions_controller.rb" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/controllers/sessions_controller.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="288">
-              <caret line="16" column="8" lean-forward="true" selection-start-line="16" selection-start-column="8" selection-end-line="16" selection-end-column="8" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="users_controller.rb" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/controllers/users_controller.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="936">
-              <caret line="52" lean-forward="true" selection-start-line="52" selection-end-line="52" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="application_controller.rb" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/controllers/application_controller.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="450">
-              <caret line="25" column="7" selection-start-line="25" selection-start-column="7" selection-end-line="25" selection-end-column="7" />
+            <state relative-caret-position="234">
+              <caret line="27" lean-forward="true" selection-start-line="27" selection-end-line="27" />
             </state>
           </provider>
         </entry>
@@ -93,8 +163,6 @@
         <option value="$PROJECT_DIR$/app/models/video.rb" />
         <option value="$PROJECT_DIR$/db/migrate/20180409152921_create_users.rb" />
         <option value="$PROJECT_DIR$/app/views/users/index.html.erb" />
-        <option value="$PROJECT_DIR$/app/models/descriptive_page.rb" />
-        <option value="$PROJECT_DIR$/app/models/promise.rb" />
         <option value="$PROJECT_DIR$/app/views/admins/index.html.erb" />
         <option value="$PROJECT_DIR$/app/views/descriptive_pages/index.html.erb" />
         <option value="$PROJECT_DIR$/app/views/images/index.html.erb" />
@@ -106,16 +174,19 @@
         <option value="$PROJECT_DIR$/app/models/admin.rb" />
         <option value="$PROJECT_DIR$/app/models/profile.rb" />
         <option value="$PROJECT_DIR$/app/models/proyect.rb" />
-        <option value="$PROJECT_DIR$/app/models/user.rb" />
         <option value="$PROJECT_DIR$/config/routes.rb" />
-        <option value="$PROJECT_DIR$/app/views/home/index.html.erb" />
         <option value="$PROJECT_DIR$/app/controllers/sessions_controller.rb" />
         <option value="$PROJECT_DIR$/app/controllers/users_controller.rb" />
         <option value="$PROJECT_DIR$/app/controllers/application_controller.rb" />
         <option value="$PROJECT_DIR$/Gemfile" />
-        <option value="$PROJECT_DIR$/app/views/sessions/new.html.erb" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/application.css.sass" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/application.scss" />
+        <option value="$PROJECT_DIR$/app/models/user.rb" />
+        <option value="$PROJECT_DIR$/app/models/descriptive_page.rb" />
+        <option value="$PROJECT_DIR$/app/models/project.rb" />
+        <option value="$PROJECT_DIR$/app/models/promise.rb" />
+        <option value="$PROJECT_DIR$/app/views/home/index.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/sessions/new.html.erb" />
       </list>
     </option>
   </component>
@@ -131,16 +202,18 @@
     </packageJsonPaths>
   </component>
   <component name="ProjectFrameBounds" extendedState="4">
-    <option name="x" value="173" />
+    <option name="x" value="172" />
     <option name="y" value="24" />
     <option name="width" value="1045" />
-    <option name="height" value="639" />
+    <option name="height" value="744" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="RailsProjectView" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -163,14 +236,14 @@
               <item name="course-project-eggshell" type="b2602c69:ProjectViewProjectNode" />
               <item name="course-project-eggshell" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
-              <item name="stylesheets" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="course-project-eggshell" type="b2602c69:ProjectViewProjectNode" />
               <item name="course-project-eggshell" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
               <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="home" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="course-project-eggshell" type="b2602c69:ProjectViewProjectNode" />
@@ -182,21 +255,17 @@
             <path>
               <item name="course-project-eggshell" type="b2602c69:ProjectViewProjectNode" />
               <item name="course-project-eggshell" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="users" type="462c0819:PsiDirectoryNode" />
+              <item name="db" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="RailsProjectView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../course-project-eggshell(respaldo)" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
   </component>
@@ -335,18 +404,19 @@
       <workItem from="1524743154165" duration="4213000" />
       <workItem from="1524756804711" duration="612000" />
       <workItem from="1524758985995" duration="3078000" />
-      <workItem from="1524792470807" duration="1236000" />
+      <workItem from="1524792470807" duration="1757000" />
+      <workItem from="1524830861923" duration="9872000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="32189000" />
+    <option name="totallyTimeSpent" value="42582000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="173" y="24" width="1045" height="639" extended-state="4" />
+    <frame x="172" y="24" width="1045" height="744" extended-state="4" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.3773774" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.3853854" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
@@ -371,19 +441,19 @@
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26705492" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.32854864" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info anchor="bottom" id="Terminal" order="10" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Messages" order="12" weight="0.32854864" />
@@ -397,76 +467,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/views/profiles/index.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="5" column="5" selection-start-line="5" selection-start-column="5" selection-end-line="5" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/promises/index.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="5" column="5" selection-start-line="5" selection-start-column="5" selection-end-line="5" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/proyects/index.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="5" column="5" selection-start-line="5" selection-start-column="5" selection-end-line="5" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/users/index.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="5" column="5" selection-start-line="5" selection-start-column="5" selection-end-line="5" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/videos/index.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="6" column="7" lean-forward="true" selection-start-line="6" selection-start-column="7" selection-end-line="6" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/proyect.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="14" selection-start-line="14" selection-end-line="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/users_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1206">
-          <caret line="67" column="7" selection-start-line="67" selection-start-column="7" selection-end-line="67" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/user.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/proyect.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="18">
-          <caret line="1" column="64" selection-start-line="1" selection-start-column="2" selection-end-line="1" selection-end-column="66" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/admin.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/models/promise.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="72">
@@ -546,34 +546,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/db/migrate/20180410225321_create_admins.rb" />
     <entry file="file://$PROJECT_DIR$/db/migrate/20180409152921_create_users.rb" />
-    <entry file="file://$PROJECT_DIR$/app/models/descriptive_page.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="36">
-          <caret line="2" column="42" selection-start-line="2" selection-start-column="42" selection-end-line="2" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/image.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="54">
-          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/promise.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="5" column="2" selection-start-line="5" selection-start-column="2" selection-end-line="5" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/video.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="54">
-          <caret line="3" selection-start-line="3" selection-end-line="3" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/admins/index.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
@@ -616,13 +588,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/proyect.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="522">
-          <caret line="29" column="23" selection-start-line="29" selection-start-column="23" selection-end-line="29" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/config/routes.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="342">
@@ -630,31 +595,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/user.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/models/admin.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="54">
           <caret line="3" column="38" selection-start-line="3" selection-start-column="2" selection-end-line="3" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/profile.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="9" column="18" selection-start-line="9" selection-start-column="18" selection-end-line="9" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/home/index.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="920">
-          <caret line="166" column="8" selection-start-line="166" selection-start-column="8" selection-end-line="166" selection-end-column="8" />
         </state>
       </provider>
     </entry>
@@ -675,14 +619,7 @@
     <entry file="file://$PROJECT_DIR$/app/controllers/users_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="936">
-          <caret line="52" lean-forward="true" selection-start-line="52" selection-end-line="52" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/users/index.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="522">
-          <caret line="29" selection-start-line="29" selection-end-line="29" />
+          <caret line="52" selection-start-line="52" selection-end-line="52" />
         </state>
       </provider>
     </entry>
@@ -693,38 +630,137 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/application.css.sass">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="15" column="20" lean-forward="true" selection-start-line="15" selection-start-column="20" selection-end-line="15" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/application.css.sass" />
     <entry file="file://$PROJECT_DIR$/Gemfile">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="828">
+        <state relative-caret-position="990">
           <caret line="55" column="6" selection-start-line="55" selection-start-column="6" selection-end-line="55" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/sessions_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="16" column="8" lean-forward="true" selection-start-line="16" selection-start-column="8" selection-end-line="16" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/sessions/new.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="37" lean-forward="true" selection-start-line="37" selection-end-line="37" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/application.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="288">
-          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
+          <caret line="16" selection-start-line="16" selection-end-line="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/sessions_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="215">
+          <caret line="16" column="8" selection-start-line="16" selection-start-column="8" selection-end-line="16" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/promises/_promise.json.jbuilder">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/image.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="3" selection-start-line="3" selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/proyect.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="522">
+          <caret line="29" column="23" selection-start-line="29" selection-start-column="23" selection-end-line="29" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/featured.rb">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/users/show.json.jbuilder">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/users/index.json.jbuilder">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/users/index.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="25" selection-start-line="25" selection-end-line="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/users/edit.html.erb">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/descriptive_page.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/profile.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="9" column="18" selection-start-line="9" selection-start-column="18" selection-end-line="9" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/project.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="14" column="35" lean-forward="true" selection-start-line="14" selection-start-column="35" selection-end-line="14" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/promise.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/user.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/user_buys_promise.rb">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/user_funds_project.rb">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/user_role.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="34" selection-start-column="34" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/video.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="3" selection-start-line="3" selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/wishlist.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/home/index.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="773">
+          <caret line="138" column="42" lean-forward="true" selection-start-line="138" selection-start-column="42" selection-end-line="138" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/sessions/new.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="27" lean-forward="true" selection-start-line="27" selection-end-line="27" />
         </state>
       </provider>
     </entry>

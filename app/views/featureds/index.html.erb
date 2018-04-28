@@ -1,0 +1,27 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Featureds</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Project</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @featureds.each do |featured| %>
+      <tr>
+        <td><%= featured.Project %></td>
+        <td><%= link_to 'Show', featured %></td>
+        <td><%= link_to 'Edit', edit_featured_path(featured) %></td>
+        <td><%= link_to 'Destroy', featured, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Featured', new_featured_path %>

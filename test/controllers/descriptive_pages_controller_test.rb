@@ -17,7 +17,7 @@ class DescriptivePagesControllerTest < ActionDispatch::IntegrationTest
 
   test "should create descriptive_page" do
     assert_difference('DescriptivePage.count') do
-      post descriptive_pages_url, params: { descriptive_page: { Proyect_id: @descriptive_page.Proyect_id, link: @descriptive_page.link } }
+      post descriptive_pages_url, params: { descriptive_page: { Project_id: @descriptive_page.Project_id, link: @descriptive_page.link } }
     end
 
     assert_redirected_to descriptive_page_url(DescriptivePage.last)
@@ -34,7 +34,7 @@ class DescriptivePagesControllerTest < ActionDispatch::IntegrationTest
   end
 
   test "should update descriptive_page" do
-    patch descriptive_page_url(@descriptive_page), params: { descriptive_page: { Proyect_id: @descriptive_page.Proyect_id, link: @descriptive_page.link } }
+    patch descriptive_page_url(@descriptive_page), params: { descriptive_page: { Project_id: @descriptive_page.Project_id, link: @descriptive_page.link } }
     assert_redirected_to descriptive_page_url(@descriptive_page)
   end
 
