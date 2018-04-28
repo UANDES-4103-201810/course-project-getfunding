@@ -1,149 +1,83 @@
-
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
 
 <head>
-  <link rel="stylesheet" type="text/css" href="mystyle.css">
-  <title> prueba</title>
-  <style>
-    h1 {
-      color: Blue;
-    }
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    .nombre {
-      color: white;
-      font-size: 60px;
-      width: 50%;
-    }
-
-    .header {
-      background-color: #3333ff;
-      padding: 10px;
-      display: table;
-      width: 100%;
-
-
-
-    }
-
-    .nav {
-      overflow: hidden;
-      background-color: #3333ff;
-      padding: 20px;
-    }
-
-    .nav a {
-      width: 60px;
-      font-size: 20px;
-      font-weight: 900;
-      float: left;
-      color: black;
-      text-align: center;
-      padding: 14px 16px;
-      text-decoration: none;
-      border-radius:10px;
-
-    }
-
-    .nav a:hover {
-      background-color: white;
-      color: blue;
-      display: inline;
-    }
-
-
-
-    .box {
-      width: 100px;
-      border: 5px solid blue;
-      padding: 50px;
-      margin: 5px;
-      border-radius: 25px;
-    }
-
-
-    .box a:hover {
-
-      font-weight:900;
-      color: lightblue;
-    }
-
-
-    .flex-container {
-      flex-wrap: wrap;
-      width: 1300px;
-      display: flex;
-      background: white;
-
-    }
-
-    .busqueda{
-      background-color: #cce6ff;
-      float: right;
-      border-radius:10px;
-    }
-
-    .columnheader1{
-      float: left;
-      width: 50%;
-
-    }
-
-    .columnheader2{
-      float:right ;
-      width: 50%;
-
-
-    }
-
-    .row:after {
-      content: "";
-      display: table;
-      clear: both;
-    }
-
-    .buscar {
-      background-color:#cce6ff;
-      float: right;
-      border-radius:10px;
-    }
-
-  </style>
 </head>
+<title> Session</title>
+
 <body>
-<div class = "header">
-  <div class = "row">
-    <div class = "columnheader1">
-      <h1 class = "nombre"> Eggshell </h1>
-    </div>
-    <div class = "columnheader2">
-      <button class = "buscar"> Search</button>
-      <textarea class = "busqueda" rows = "1" cols="40"> Project name</textarea>
+
+
+<div class="container">
+
+
+  <nav class="navbar navbar-dark bg-primary">
+    <div class="row">
+      <h1 style="color:white">Eggshell</h1>
+      <div class=" col">
+        <div class="row">
+          <a href="/home/index" class="btn btn-primary" role="button">Home</a>
+          <a href="/users" class="btn btn-primary" href="#" role="button">User</a>
+          <a href="/projects" class="btn btn-primary" href="#" role="button">My projects</a>
+        </div>
+      </div>
+      <div class="col">
+        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+
+      </div>
+
+      <button class="btn btn-success my-2 my-sm-0" type="submit">Search</button>
 
     </div>
-  </div>
+
+
+  </nav>
+
+
+  <div class="album py-5 bg-light">
+    <div class="container">
+
+      <div class="row">
+        <div class="col-md-4">
+          <div class="card mb-4 box-shadow">
+            <h1>Falcon heavy</h1>
+            <img class="card-img-top" data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp; text=Falcon Heavy" alt="cohete feed" style="height: 225px; width: 100%; display: block;" src="/assets/cohete.jpg">
+            <div class="card-body">
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
+                content. This content is a little bit longer.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card mb-4 box-shadow">
+            <h1>My prusa</h1>
+            <img class="card-img-top" data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail" alt="Thumbnail [100%x225]" src="/assets/mk3.jpeg" data-holder-rendered="true" style="height: 225px; width: 100%; display: block;">
+            <div class="card-body">
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
+                content. This content is a little bit longer.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                </div>
+                <small class="text-muted">9 mins</small>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+     </div>
+    </div>
+
 </div>
-<div class = "nav">
-
-  <%= link_to 'Home', home_index_path %>
-  <%= link_to 'Projects', projects_path %>
-  <%= link_to 'User', users_path %>
-  <%= link_to 'Log In', sessions_new_path %>
-
-</div>
-<h1>Best Proyects of the week</h1>
-
-<div class = "flex-container">
-
-<div class="box">
-  <%=  link_to 'Project', projects_path %>
-</div>
-  <div class="box">
-    <%= link_to 'Project', projects_path %>
-  </div>
-
-</div>
-
-
 </body>
 </html>

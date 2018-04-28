@@ -17,12 +17,28 @@
 
 
     <nav class="navbar navbar-dark bg-primary">
-      <h1>Eggshell</h1>
+      <div class = "row">
+      <h1 style = "color:white">Eggshell</h1>
       <div class=" col">
-        <button type="button" class="btn btn-primary">Primary</button>
-        <a class="btn btn-primary" href="#" role="button">Link</a>
+        <div class = "row">
+        <a  href="/home/index" class="btn btn-primary"  role="button">Home</a>
+        <a href="/users" class="btn btn-primary" href="#" role="button">User</a>
+        <a href="/projects" class="btn btn-primary" href="#" role="button">My projects</a>
+        </div>
       </div>
+      <div class = "col">
+        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+
+      </div>
+
+        <button class="btn btn-success my-2 my-sm-0" type="submit">Search</button>
+
+      </div>
+
+
+
     </nav>
+<div class = col-4>
 
 
 
@@ -38,17 +54,15 @@
       <%= f.label :password, "Password" %><br/>
       <%= f.password_field :password, autocomplete: "off" %>
     </div>
-    <div class="actions">
-      <%= f.submit "Log In" %>
-    </div>
+    <button class="btn btn-primary">
+      <%=  f.submit "Log In"  %>
+    </button>
     <br>
   <% end %>
   <%= link_to 'Sign In', "#" %>
-  <button type="button" class="btn btn-primary">Primary</button>
-  <a class="btn btn-primary" href="#" role="button">Link</a>
+  </div>
+
 </div>
-
-
 
 </body>
 
