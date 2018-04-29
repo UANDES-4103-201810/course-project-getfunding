@@ -11,39 +11,66 @@
 
 <body>
 
-
-<div class="container">
-
-
-  <nav class="navbar navbar-dark bg-primary">
-    <div class="row">
-      <h1 style="color:white">Eggshell</h1>
-      <div class=" col">
-        <div class="row">
-          <a href="/home/index" class="btn btn-primary" role="button">Home</a>
-          <a href="/users" class="btn btn-primary" href="#" role="button">User</a>
-          <a href="/projects" class="btn btn-primary" href="#" role="button">My projects</a>
-        </div>
+<div class = "container">
+<nav class="navbar navbar-dark bg-primary">
+  <div class="row">
+    <h1 style="color:white">Eggshell</h1>
+    <div class=" col">
+      <div class="row">
+        <a href="/home/index" class="btn btn-primary" role="button">Home</a>
+        <a href="/profiles" class="btn btn-primary"  role="button">User profile</a>
+        <a href="/users" class="btn btn-primary"  role="button">Users List</a>
+        <a href="/projects" class="btn btn-primary"  role="button">My projects</a>
+        <a href="/projects" class="btn btn-primary"  role="button">Projects</a>
+        <a href="/sessions/new" class="btn btn-primary"  role="button">Log in</a>
       </div>
-      <div class="col">
-        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-
-      </div>
-
-      <button class="btn btn-success my-2 my-sm-0" type="submit">Search</button>
-
-    </div>
-
-
-  </nav>
-
-  <div class = "container">
-    <h1><%= @project.name %></h1>
-    <div class = "col-6">
-    <img class="card-img-top" data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp; text=Falcon Heavy" alt="cohete feed" style="height: 225px; width: 100%; display: block;" src="/assets/cohete.jpg">
-    <p><%= @project.description %> </p>
     </div>
   </div>
+  <div class="row">
+    <div class="col">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+    </div>
+    <button class="btn btn-success my-2 my-sm-0" type="submit">Search</button>
+  </div>
+
+</nav>
+
+
+
+  <div class = "container">
+    <div class = "row">
+      <div class = " col-7">
+        <div class = "container">
+          <h1><%= @project.name %></h1>
+          <div class = "col-6">
+            <img class="card-img-top" data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp; text=Falcon Heavy" alt="cohete feed" style="height: 225px; width: 100%; display: block;" src="/assets/cohete.jpg">
+            <p><%= @project.description %> </p>
+          </div>
+        </div>
+      </div>
+      <div class=" col-5">
+        <div class="container" style="background-color: dodgerblue; border-radius: 25px; margin: 10px;">
+          <h2>Objective</h2>
+          <%= @project.goal %>
+          <h2>Colected</h2>
+          <%= @project.money_colected%>
+          <h2>End of project</h2>
+          <%= @project.expiration_date %>
+            <h2> Want to support? </h2>
+            <input class="form-control" type="text" placeholder="Amount">
+             <button type="button" class="btn btn-success" style="width: 50%; border-radius: 25px;">Donate</button>
+        </div>
+        <button type="button" class="btn btn-info" style="width: 100%; background-color: cornflowerblue; margin: 5px; border-radius: 25px">Add to whishlist</button>
+        <a href="/promises" type="button" class="btn btn-info" style="width: 100%; background-color: cornflowerblue; margin: 5px; border-radius: 25px">Promises</a>
+
+
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+
 
 
 
@@ -98,6 +125,7 @@
 
 
   </div>
-</div>
+
+
 </body>
 </html>

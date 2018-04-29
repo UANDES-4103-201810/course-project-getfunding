@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :users
   resources :featureds
   resources :descriptive_pages
   resources :videos
@@ -8,9 +9,10 @@ Rails.application.routes.draw do
   resources :categories
   resources :user_funds_projects
   resources :projects
-  resources :user_roles
-  resources :users
-  get 'sessions/new'
+  resources :sessions
+  post "/sessions/new", to: "sessions#create"
+
+
 
   resources :user_buys_promises
   resources :profiles

@@ -21,21 +21,23 @@
       <div class=" col">
         <div class="row">
           <a href="/home/index" class="btn btn-primary" role="button">Home</a>
-          <a href="/users" class="btn btn-primary" href="#" role="button">User</a>
-          <a href="/projects" class="btn btn-primary" href="#" role="button">My projects</a>
+          <a href="/profiles" class="btn btn-primary" role="button">User profile</a>
+          <a href="/users" class="btn btn-primary" role="button">Users List</a>
+          <a href="/projects" class="btn btn-primary" role="button">My projects</a>
+          <a href="/projects" class="btn btn-primary" role="button">Projects</a>
+          <a href="/sessions/new" class="btn btn-primary" role="button">Log in</a>
         </div>
       </div>
+    </div>
+    <div class="row">
       <div class="col">
         <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-
       </div>
-
       <button class="btn btn-success my-2 my-sm-0" type="submit">Search</button>
-
     </div>
 
-
   </nav>
+
   <div class=col-4>
 
 
@@ -43,9 +45,7 @@
 <p id="notice"><%= notice %></p>
 
 <h1>Profiles</h1>
-<h2>
-  <td> <%= link_to "Home", home_index_path  %></td>
-</h2>
+
 <table>
   <thead>
     <tr>

@@ -21,38 +21,36 @@
       <div class=" col">
         <div class="row">
           <a href="/home/index" class="btn btn-primary" role="button">Home</a>
-          <a href="/users" class="btn btn-primary" href="#" role="button">User</a>
-          <a href="/projects" class="btn btn-primary" href="#" role="button">My projects</a>
+          <a href="/profiles" class="btn btn-primary" role="button">User profile</a>
+          <a href="/users" class="btn btn-primary" role="button">Users List</a>
+          <a href="/projects" class="btn btn-primary" role="button">My projects</a>
+          <a href="/projects" class="btn btn-primary" role="button">Projects</a>
+          <a href="/sessions/new" class="btn btn-primary" role="button">Log in</a>
         </div>
       </div>
+    </div>
+    <div class="row">
       <div class="col">
         <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-
       </div>
-
       <button class="btn btn-success my-2 my-sm-0" type="submit">Search</button>
-
     </div>
 
-
   </nav>
-
 
     <div class="album py-5 bg-light">
       <div class="container">
         <% @projects.each do |project| %>
-
         <div class="row">
           <div class="col-md-4">
             <div class="card mb-4 box-shadow">
               <h1><%= project.name %></h1>
               <img class="card-img-top" data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp; text=Falcon Heavy" alt="cohete feed" style="height: 225px; width: 100%; display: block;" src="/assets/cohete.jpg">
               <div class="card-body">
-                <p class="card-text"><%= project.description %></p>
+                <h3>Goal</h3>
                 <p class="card-text"><%= project.goal %></p>
-                <p class="card-text"><%= project.expiration_date %></p>
-                <p class="card-text"><%= project.state %></p>
-                <p class="card-text"><%= project.start_date %></p>
+                <h3>Colected</h3>
+                <p class="card-text"><%= project.money_colected %></p>
                 <div class="d-flex justify-content-between align-items-center">
                   <div class="btn-group">
                     <button type="button" class="btn btn-sm btn-outline-secondary"><%= link_to 'Show', project %></button>
@@ -70,7 +68,7 @@
         <% end %>
       </div>
     </div>
-
+  <button type="button" class="btn btn-sm btn-outline-secondary"><%= link_to 'New Project', new_project_path %></button>
 
 
 <p id="notice"><%= notice %></p>
@@ -118,6 +116,6 @@
 
 
   </div>
-</div>
+
 </body>
 </html>
