@@ -9,7 +9,6 @@ Rails.application.routes.draw do
   resources :categories
   resources :user_funds_projects
   resources :projects
-  resources :sessions
   post "/sessions/new", to: "sessions#create"
 
 
