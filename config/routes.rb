@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  resources :users
+  devise_for :users
   resources :featureds
   resources :descriptive_pages
   resources :videos

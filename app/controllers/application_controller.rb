@@ -1,13 +1,10 @@
 class ApplicationController < ActionController::Base
   protect_from_forgery with: :exception
+  before_action :authenticate_user!
   Rails.application.config.session_store :cookie_store, key: "current_user_id"
 
 
 
-def current_user
-  @_current_user ||= session[:current_user_id] &&
-      User.find_by(id: session[:current_user_id])
-end
 
   def is_user_logged_in?
     logged_in = false
