@@ -1,4 +1,18 @@
-<!doctype html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>EGGSHELL</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+  <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+  <link href="style.css" rel="stylesheet">
+</head>
+<body>
+<!---<!doctype html>
 <html lang="en">
 
 <head>
@@ -9,15 +23,13 @@
 </head>
 <title> Session</title>
 
-<body>
-
-
-<div class="container">
+<body>--->
+<!--<div class="container">
 
 
   <nav class="navbar navbar-dark bg-primary">
     <div class="row">
-      <h1 style="color:white">Eggshell</h1>
+      <h1 style="color:white">EGGSHElL</h1>
       <div class=" col">
         <div class="row">
           <a href="/home/index" class="btn btn-primary" role="button">Home</a>
@@ -41,7 +53,58 @@
       <button class="btn btn-success my-2 my-sm-0" type="submit">Search</button>
     </div>
 
-  </nav>
+  </nav>--->
+<!-- Navigation ------------------------------------------------------------------------------------------------------------------------------------------>
+<nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#"><img src="/assets/boards.png"></a>
+    <h1 style="color:mediumblue">EGGSHELL</h1>
+    <button class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarResponsive">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+      <ul class="navbar-nav ml-auto">
+
+        <li class="nav-item active">
+          <a class="nav-link" href="/home/index">Home</a>
+        </li>
+
+        <li class="nav-item active">
+          <a class="nav-link" href="/proyects">Proyects</a>
+        </li>
+
+        <li class="nav-item active">
+          <a class="nav-link" href="/proyects">My projects</a>
+        </li
+
+        <li class="nav-item active">
+          <a class="nav-link" href="profiles">User profile</a>
+        </li>
+
+        <li class="nav-item active">
+          <a class="nav-link" href="users">Users List</a>
+        </li>
+        <% if user_signed_in? %>
+          <a class="btn btn-primary" role="button" ><%= link_to "Sign Out", destroy_user_session_path, method: :delete %></a>
+        <%else%>
+          <a href="/users/sign_in" class="btn btn-primary"  role="button">Log in</a>
+        <%end%>
+        <h3><%= current_user.id%></h3>
+
+        <div class="row">
+          <div class="col">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+          </div>
+          <button class="btn btn-success my-2 my-sm-0" type="submit">Search</button>
+        </div>
+
+    </div>
+  </div>
+
+
+</nav>
+
 
   <h1>Best of the week</h1>
   <div class="album py-5 bg-light">

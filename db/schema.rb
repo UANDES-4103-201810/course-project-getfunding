@@ -78,11 +78,6 @@ ActiveRecord::Schema.define(version: 20180430034413) do
     t.index ["Project_id"], name: "index_promises_on_Project_id"
   end
 
-  create_table "sessions", force: :cascade do |t|
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
-
   create_table "user_buys_promises", force: :cascade do |t|
     t.integer "User_id"
     t.integer "Promise_id"
