@@ -41,6 +41,7 @@
     <div class="album py-5 bg-light">
       <div class="container">
         <% @projects.each do |project| %>
+
         <div class="row">
           <div class="col-md-4">
             <div class="card mb-4 box-shadow">
@@ -62,15 +63,13 @@
               </div>
             </div>
           </div>
-
         </div>
-
         <% end %>
       </div>
     </div>
   <button type="button" class="btn btn-sm btn-outline-secondary"><%= link_to 'New Project', new_project_path %></button>
 
-
+<!---
 <p id="notice"><%= notice %></p>
 
 <h1>Projects</h1>
@@ -113,7 +112,7 @@
 
 <%= link_to 'New Project', new_project_path %>
 
-
+-->
 
   </div>
 

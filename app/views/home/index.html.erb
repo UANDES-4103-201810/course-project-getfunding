@@ -42,7 +42,7 @@
             <%else%>
           <a href="/users/sign_in" class="btn btn-primary"  role="button">Log in</a>
             <%end%>
-        <h3><%= current_user.id%></h3>
+
         </div>
       </div>
     </div>
@@ -65,40 +65,46 @@
     </button>
     <div class="collapse navbar-collapse" id="navbarResponsive">
       <ul class="navbar-nav ml-auto">
-
+        <% if user_signed_in? %>
         <li class="nav-item active">
           <a class="nav-link" href="/home/index">Home</a>
         </li>
 
         <li class="nav-item active">
-          <a class="nav-link" href="/proyects">Proyects</a>
+          <a class="nav-link" href="/projects">Projects</a>
         </li>
 
         <li class="nav-item active">
-          <a class="nav-link" href="/proyects">My projects</a>
-        </li
-
-        <li class="nav-item active">
-          <a class="nav-link" href="profiles">User profile</a>
+          <a class="nav-link" href="/projects">My projects</a>
         </li>
 
         <li class="nav-item active">
-          <a class="nav-link" href="users">Users List</a>
+          <a class="nav-link" href="/profiles">User profile</a>
         </li>
+        <%else%>
+        <li class="nav-item active">
+        <a class="nav-link" href="/home/index">Home</a>
+        </li>
+
+        <li class="nav-item active">
+        <a class="btn btn-info" href="/projects">Projects</a>
+        </li>
+        <%end %>
+
         <% if user_signed_in? %>
-          <a class="btn btn-primary" role="button" ><%= link_to "Sign Out", destroy_user_session_path, method: :delete %></a>
+          <%= link_to "Sign Out", destroy_user_session_path, method: :delete, :style=> 'color:#FFFFFF;', :class => 'btn btn-info'%>
         <%else%>
           <a href="/users/sign_in" class="btn btn-primary"  role="button">Log in</a>
-        <%end%>
-        <h3><%= current_user.id%></h3>
 
+
+        <%end %>
         <div class="row">
           <div class="col">
             <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
           </div>
           <button class="btn btn-success my-2 my-sm-0" type="submit">Search</button>
         </div>
-
+      </ul>
     </div>
   </div>
 

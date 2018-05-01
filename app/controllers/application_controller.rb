@@ -1,6 +1,6 @@
 class ApplicationController < ActionController::Base
   protect_from_forgery with: :exception
-  before_action :authenticate_user!
+  before_action :authenticate_user!, :except => [:index]
   Rails.application.config.session_store :cookie_store, key: "current_user_id"
 
 
