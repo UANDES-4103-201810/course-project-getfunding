@@ -1,9 +1,9 @@
 class ApplicationController < ActionController::Base
   protect_from_forgery with: :exception
-  before_action :authenticate_user!, :except => [:index]
+  before_action :authenticate_user!, :except => [:index, :show]
   Rails.application.config.session_store :cookie_store, key: "current_user_id"
 
-
+  Rails.application.config.session_store :cookie_store, key: "current_project_id"
 
 
   def is_user_logged_in?

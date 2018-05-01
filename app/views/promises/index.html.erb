@@ -53,12 +53,15 @@
                 <%= promise.condition %>
                 <div class="d-flex justify-content-between align-items-center">
                   <div class="btn-group">
+                    <% if user_signed_in? %>
                     <button type="button" class="btn btn-sm btn-outline-secondary"> Buy</button>
                     <button type="button" class="btn btn-sm btn-outline-secondary"><%= link_to 'Edit', edit_promise_path(promise) %></button>
-                    <button type="button" class="btn btn-sm btn-outline-secondary"><%= link_to 'Destroy', promise, method: :delete, data: {confirm: 'Are you sure?'} %>
-                    </button>
+                    <button type="button" class="btn btn-sm btn-outline-secondary"><%= link_to 'Destroy', promise, method: :delete, data: {confirm: 'Are you sure?'} %></button>
+                    <%else%>
+                      <button type="button" class="btn btn-sm btn-outline-secondary"> Buy</button>
+                    <%end%>
 
-                  </div>
+                      </div>
                 </div>
               </div>
             </div>
@@ -74,7 +77,7 @@
 
 </div>
 
-
+<!--
   <div class=col-4>
 
 
@@ -109,7 +112,7 @@
 <br>
 
 <%= link_to 'New Promise', new_promise_path %>
-
+-->
 
   </div>
 </div>
