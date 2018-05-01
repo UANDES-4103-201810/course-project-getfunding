@@ -36,7 +36,7 @@
 </nav>
 
 
-
+<% session[:current_project_id ] = @project.id%>
   <div class = "container">
     <div class = "row">
       <div class = " col-7">
@@ -60,10 +60,12 @@
             <input class="form-control" type="text" placeholder="Amount">
              <button type="button" class="btn btn-success" style="width: 50%; border-radius: 25px;">Donate</button>
         </div>
+        <% if user_signed_in? %>
         <button type="button" class="btn btn-info" style="width: 100%; background-color: cornflowerblue; margin: 5px; border-radius: 25px">Add to whishlist</button>
         <a href="/promises" type="button" class="btn btn-info" style="width: 100%; background-color: cornflowerblue; margin: 5px; border-radius: 25px">Promises</a>
-
-
+<% else %>
+          <a href="/promises" type="button" class="btn btn-info" style="width: 100%; background-color: cornflowerblue; margin: 5px; border-radius: 25px">Promises</a>
+<%end%>
                 </div>
               </div>
             </div>
@@ -74,7 +76,7 @@
 
 
 
-
+<!--
   <div class=col-4>
 
 
@@ -126,6 +128,6 @@
 
   </div>
 
-
+-->
 </body>
 </html>

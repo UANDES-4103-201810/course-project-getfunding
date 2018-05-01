@@ -15,6 +15,7 @@ class PromisesController < ApplicationController
   # GET /promises/new
   def new
     @promise = Promise.new
+    @promise.Project_id = session[:current_project_id]
   end
 
   # GET /promises/1/edit
@@ -25,7 +26,7 @@ class PromisesController < ApplicationController
   # POST /promises.json
   def create
     @promise = Promise.new(promise_params)
-
+    @promise.Project_id = session[:current_project_id]
     respond_to do |format|
       if @promise.save
         format.html { redirect_to @promise, notice: 'Promise was successfully created.' }
