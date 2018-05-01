@@ -5,6 +5,8 @@ class ApplicationController < ActionController::Base
 
   Rails.application.config.session_store :cookie_store, key: "current_project_id"
 
+@wishlist = Wishlist.all
+
 
   def is_user_logged_in?
     logged_in = false

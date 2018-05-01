@@ -4,7 +4,7 @@ class WishlistsController < ApplicationController
   # GET /wishlists
   # GET /wishlists.json
   def index
-    @wishlists = Wishlist.all
+    @wishlists = Wishlist.all.where(User_id: current_user.id)
   end
 
   # GET /wishlists/1
@@ -15,6 +15,8 @@ class WishlistsController < ApplicationController
   # GET /wishlists/new
   def new
     @wishlist = Wishlist.new
+    @wishlist.User_id = current_user.id
+    @wishlist.Project_id = session[:current_project_id]
   end
 
   # GET /wishlists/1/edit
@@ -25,6 +27,8 @@ class WishlistsController < ApplicationController
   # POST /wishlists.json
   def create
     @wishlist = Wishlist.new(wishlist_params)
+    @wishlist.User_id = current_user.id
+    @wishlist.Project_id = session[:current_project_id]
 
     respond_to do |format|
       if @wishlist.save

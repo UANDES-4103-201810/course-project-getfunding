@@ -142,8 +142,10 @@
       </div>
     </div>
   <button type="button" class="btn btn-sm btn-outline-secondary"><%= link_to 'New Project', new_project_path %></button>
-
-<!---
+<% if user_signed_in? %>
+  <a type="button" class="btn btn-sm btn-outline-secondary" href="/wishlists">Wishlist</a>
+<% end %>
+  <!---
 <p id="notice"><%= notice %></p>
 
 <h1>Projects</h1>

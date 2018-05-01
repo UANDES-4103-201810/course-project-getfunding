@@ -131,7 +131,7 @@
              <button type="button" class="btn btn-success" style="width: 50%; border-radius: 25px;">Donate</button>
         </div>
         <% if user_signed_in? %>
-        <button type="button" class="btn btn-info" style="width: 100%; background-color: cornflowerblue; margin: 5px; border-radius: 25px">Add to whishlist</button>
+        <a  class="btn btn-info" style="width: 100%; background-color: cornflowerblue; margin: 5px; border-radius: 25px" href="/wishlists/new" >Add to whishlist</a>
         <a href="/promises" type="button" class="btn btn-info" style="width: 100%; background-color: cornflowerblue; margin: 5px; border-radius: 25px">Promises</a>
 <% else %>
           <a href="/promises" type="button" class="btn btn-info" style="width: 100%; background-color: cornflowerblue; margin: 5px; border-radius: 25px">Promises</a>
