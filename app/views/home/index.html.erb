@@ -80,7 +80,7 @@
         </li>
 
         <li class="nav-item active">
-          <a class="btn btn-primary-1" href="/profiles">User profile</a>
+          <a class="btn btn-primary m-1" href="/profiles">User profile</a>
         </li>
         <%else%>
         <li class="nav-item active">
@@ -93,7 +93,7 @@
         <%end %>
 
         <% if user_signed_in? %>
-          <%= link_to "Sign Out", destroy_user_session_path, method: :delete, :style=> 'color:#FFFFFF;', :class => 'btn btn-info'%>
+          <%= link_to "Sign Out", destroy_user_session_path, method: :delete, :style=> 'color:#FFFFFF;', :class => 'btn btn-primary m-1'%>
         <%else%>
           <a href="/users/sign_in" class="btn btn-primary m-1"  role="button">Log in</a>
 
@@ -126,7 +126,7 @@
               <p class="card-text">Rocket to go to mars.</p>
               <div class="d-flex justify-content-between align-items-center">
                 <div class="btn-group">
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Show</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary" href="/projects">Show</button>
                   </div>
               </div>
             </div>
@@ -140,9 +140,22 @@
               <p class="card-text">The new 3d printer prusa mk3.</p>
               <div class="d-flex justify-content-between align-items-center">
                 <div class="btn-group">
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Show</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary" href="/projects">Show</button>
                 </div>
-
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card mb-4 box-shadow">
+            <h1>Hover Board</h1>
+            <img class="card-img-top" data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp; text=Hover Board" alt="cohete feed" style="height: 225px; width: 100%; display: block;" src="/assets/hover.jpeg">
+            <div class="card-body">
+              <p class="card-text">Hover board reissue.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary" href="/projects">Show</button>
+                </div>
               </div>
             </div>
           </div>

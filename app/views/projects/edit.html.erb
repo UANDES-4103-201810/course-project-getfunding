@@ -50,7 +50,7 @@
           </li>
 
           <li class="nav-item active">
-            <a class="btn btn-primary-1" href="/profiles">User profile</a>
+            <a class="btn btn-primary m-1" href="/profiles">User profile</a>
           </li>
         <%else%>
           <li class="nav-item active">
@@ -63,7 +63,7 @@
         <%end %>
 
         <% if user_signed_in? %>
-          <%= link_to "Sign Out", destroy_user_session_path, method: :delete, :style=> 'color:#FFFFFF;', :class => 'btn btn-info'%>
+          <%= link_to "Sign Out", destroy_user_session_path, method: :delete, :style=> 'color:#FFFFFF;', :class => 'btn btn-primary m-1'%>
         <%else%>
           <a href="/users/sign_in" class="btn btn-primary m-1"  role="button">Log in</a>
 
