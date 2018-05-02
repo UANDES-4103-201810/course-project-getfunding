@@ -16,6 +16,7 @@ class ProjectsController < ApplicationController
   def new
     @project = Project.new
     @project.User_id = current_user.id
+    @project.state = "waiting"
   end
 
   # GET /projects/1/edit
@@ -27,6 +28,7 @@ class ProjectsController < ApplicationController
   def create
     @project = Project.new(project_params)
     @project.User_id = current_user.id
+    @project.state = "waiting"
 
     respond_to do |format|
       if @project.save
