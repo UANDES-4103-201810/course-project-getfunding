@@ -5,48 +5,15 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
-#projects = projects.create([{User},{name =},{description},{goal},{money_colected},{expiration_date},{state},{start_date}])
-#project.destroy_all
 
-#project.create([{
- #                   User:1
-  #                 name:""
- #                   description:""
- #                   goal:2
- #                   money_colected:
-#                   expiration_date:
-#                   state:
-#                   start_date:
-#               },
-#               {
-#                   User:
-#                       name:
-#                       description:
-#                       goal:
-#                       money_colected:
-#                       expiration_date:
-#                       state:
-#                       start_date:
-#               },
-#               {
-#                   User:
-#                       name:
-#                       description:
-#                       goal:
-#                       money_colected:
-#                       expiration_date:
-#                       state:
-#                       start_date:
-#               }])
-#
-#create_table :projects do |t|
-# t.references :User, foreign_key: true
-# t.string :name
-# t.text :description
-# t.integer :goal
-# t.integer :money_colected
-# t.date :expiration_date
-## t.string :state
-# t.date :start_date
-#
-# t.timestamps
+user.create(email:"cerenchun@miuandes.cl", encrypted_password:"123456",reset_password_token:" ",reset_password_sent_at:" ",remember_created_at:"Date.now"
+#t.integer "sign_in_count", default: 0, null: false
+#t.datetime "current_sign_in_at"
+#t.datetime "last_sign_in_at"
+#t.string "current_sign_in_ip"
+#t.string "last_sign_in_ip"
+#t.boolean "admin"
+#t.datetime "created_at", null: false
+#t.datetime "updated_at", null: false
+#t.index ["email"], name: "index_users_on_email", unique: true
+#t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
