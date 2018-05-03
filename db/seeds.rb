@@ -6,14 +6,4 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
-user.create(email:"cerenchun@miuandes.cl", encrypted_password:"123456",reset_password_token:" ",reset_password_sent_at:" ",remember_created_at:"Date.now"
-#t.integer "sign_in_count", default: 0, null: false
-#t.datetime "current_sign_in_at"
-#t.datetime "last_sign_in_at"
-#t.string "current_sign_in_ip"
-#t.string "last_sign_in_ip"
-#t.boolean "admin"
-#t.datetime "created_at", null: false
-#t.datetime "updated_at", null: false
-#t.index ["email"], name: "index_users_on_email", unique: true
-#t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
+User.create(email:"cerenchun2@miuandes.cl", encrypted_password:"123456",reset_password_token:" ",reset_password_sent_at:" ",remember_created_at:" ",sign_in_count:" ",current_sign_in_at:"",last_sign_in_at:"",current_sign_in_ip:"",last_sign_in_ip:"",admin:false,created_at:false,updated_at: false)
