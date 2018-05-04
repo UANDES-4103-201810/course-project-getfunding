@@ -4,7 +4,7 @@ class UserFundsProjectsController < ApplicationController
   # GET /user_funds_projects
   # GET /user_funds_projects.json
   def index
-    @user_funds_projects = UserFundsProject.all
+    @user_funds_projects = UserFundsProject.all.where(User_id: current_user.id)
   end
 
   # GET /user_funds_projects/1
@@ -15,6 +15,9 @@ class UserFundsProjectsController < ApplicationController
   # GET /user_funds_projects/new
   def new
     @user_funds_project = UserFundsProject.new
+    @user_funds_project.User_id= current_user.id
+    @user_funds_project.Project_id= session[:current_project_id]
+
   end
 
   # GET /user_funds_projects/1/edit
@@ -25,6 +28,8 @@ class UserFundsProjectsController < ApplicationController
   # POST /user_funds_projects.json
   def create
     @user_funds_project = UserFundsProject.new(user_funds_project_params)
+    @user_funds_project.User_id= current_user.id
+    @user_funds_project.Project_id= session[:current_project_id]
 
     respond_to do |format|
       if @user_funds_project.save

@@ -1,14 +1,18 @@
 
+  <h1>Best of the week</h1>
 
 
- <h1>Best of the week</h1>
+
+
+
+
 
 <div class="album py-12 bg-light">
   <div class="container">
       <div class="row">
         <% @featured.each do |featured| %>
         <div class="col-md-4">
-          <div class="card mb-2 box-shadow" style="border-radius: 25px">
+          <div class="card mb-4 box-shadow" style="border-radius: 25px">
             <h1><%= featured.Project.name %></h1>
             <img class="card-img-top" data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp; text=Falcon Heavy" alt="cohete feed" style="height: 225px; width: 100%; display: block;" src="/assets/cohete.jpg">
             <div class="card-body">

@@ -11,15 +11,9 @@
     </div>
   <% end %>
 
-  <div class="field">
-    <%= form.label :User_id %>
-    <%= form.text_field :User_id, id: :user_funds_project_User_id %>
-  </div>
 
-  <div class="field">
-    <%= form.label :Project_id %>
-    <%= form.text_field :Project_id, id: :user_funds_project_Project_id %>
-  </div>
+
+
 
   <div class="field">
     <%= form.label :amount %>
@@ -27,6 +21,7 @@
   </div>
 
   <div class="actions">
-    <%= form.submit %>
+    <a><%= form.submit %></a>
+
   </div>
 <% end %>

@@ -1,4 +1,8 @@
 Rails.application.routes.draw do
+  get 'myprojects/new'
+
+  get 'myprojects/create'
+
   devise_for :users
   resources :featureds
   resources :descriptive_pages
