@@ -1,110 +1,4 @@
-<!--<!doctype html>
-<html lang="en">
 
-<head>
-  <meta charset="utf-8">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-</head>
-<title> Session</title>
-
-<body>
-
-<div class = "container">
-<nav class="navbar navbar-dark bg-primary">
-  <div class="row">
-    <h1 style="color:white">Eggshell</h1>
-    <div class=" col">
-      <div class="row">
-        <a href="/home/index" class="btn btn-primary" role="button">Home</a>
-        <a href="/profiles" class="btn btn-primary"  role="button">User profile</a>
-        <a href="/users" class="btn btn-primary"  role="button">Users List</a>
-        <a href="/projects" class="btn btn-primary"  role="button">My projects</a>
-        <a href="/projects" class="btn btn-primary"  role="button">Projects</a>
-        <a href="/sessions/new" class="btn btn-primary"  role="button">Log in</a>
-      </div>
-    </div>
-  </div>
-  <div class="row">
-    <div class="col">
-      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-    </div>
-    <button class="btn btn-success my-2 my-sm-0" type="submit">Search</button>
-  </div>
-
-</nav>-->
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>EGGSHELL</title>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-  <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
-  <link href="style.css" rel="stylesheet">
-</head>
-<body>
-
-<!-- Navigation ------------------------------------------------------------------------------------------------------------------------------------------>
-<nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="#"><img src="/assets/boards.png"></a>
-    <h1 style="color:mediumblue">EGGSHELL</h1>
-    <button class="navbar-toggler" type="button" data-toggle="collapse"
-            data-target="#navbarResponsive">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarResponsive">
-      <ul class="navbar-nav ml-auto">
-        <% if user_signed_in? %>
-          <li class="nav-item active">
-            <a class="btn btn-primary m-1" style="color:#FFFFFF" href="/home/index">Home</a>
-          </li>
-
-          <li class="nav-item active">
-            <a class="btn btn-primary m-1" style="color:#FFFFFF" href="/projects">Projects</a>
-          </li>
-
-          <li class="nav-item active">
-            <a class="btn btn-primary m-1" style="color:#FFFFFF" href="/projects">My projects</a>
-          </li>
-
-          <li class="nav-item active">
-            <a class="btn btn-primary m-1" style="color:#FFFFFF" href="/profiles">User profile</a>
-          </li>
-        <%else%>
-          <li class="nav-item active">
-            <a class="btn btn-primary m-1" style="color:#FFFFFF" href="/home/index">Home</a>
-          </li>
-
-          <li class="nav-item active">
-            <a class="btn btn-primary m-1" style="color:#FFFFFF" href="/projects">Projects</a>
-          </li>
-        <%end %>
-
-        <% if user_signed_in? %>
-          <%= link_to "Sign Out", destroy_user_session_path, method: :delete, :style=> 'color:#FFFFFF;', :class => 'btn btn-primary m-1'%>
-        <%else%>
-          <a href="/users/sign_in" class="btn btn-primary m-1" style="color:#FFFFFF"  role="button">Log in</a>
-
-
-        <%end %>
-        <div class="row">
-          <div class="col">
-            <input class="form-control mt-1 m-1" type="search" placeholder="Search" aria-label="Search">
-          </div>
-          <button class="btn btn-success mt-1 mb-1 m-1" type="submit">Search</button>
-        </div>
-      </ul>
-    </div>
-  </div>
-
-
-</nav>
 
 <% session[:current_project_id ] = @project.id%>
   <div class = "container">
@@ -112,10 +6,10 @@
       <div class = " col-7">
         <div class = "container">
           <h1><%= @project.name %></h1>
-          <div class = "col-6">
-            <img class="card-img-top" data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp; text=Falcon Heavy" alt="cohete feed" style="height: 225px; width: 100%; display: block;" src="/assets/cohete.jpg">
+
+            <img class="card-img-top" data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp; text=Falcon Heavy" alt="cohete feed" style="height: 500px; width: 100%; display: block;" src="/assets/cohete.jpg">
             <p><%= @project.description %> </p>
-          </div>
+
         </div>
       </div>
       <div class=" col-5">
