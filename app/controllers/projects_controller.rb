@@ -5,6 +5,7 @@ class ProjectsController < ApplicationController
   # GET /projects.json
   def index
     @projects = Project.all
+    @current_user_role = current_user.admin
   end
 
   # GET /projects/1
