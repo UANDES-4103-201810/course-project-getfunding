@@ -5,7 +5,6 @@ class ProfilesController < ApplicationController
   # GET /profiles.json
   def index
     @profiles = Profile.where(User_id: current_user.id)
-
   end
 
   # GET /profiles/1

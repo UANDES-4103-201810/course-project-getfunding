@@ -4,7 +4,7 @@ class PromisesController < ApplicationController
   # GET /promises
   # GET /promises.json
   def index
-    @promises = Promise.all
+    @promises = Promise.where(Project_id: session[:current_project_id])
   end
 
   # GET /promises/1

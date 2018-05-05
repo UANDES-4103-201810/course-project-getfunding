@@ -10,3 +10,7 @@ project1 = Project.create :User_id =>1, :name =>"Falcon Heavy",:description =>"R
 project2 = Project.create :User_id =>1, :name =>"Falcon 9",:description =>"Rocket to place satelites i orbit and test new technologies",:goal=>100000, :money_colected=>32000,:expiration_date =>" 2019-09-03",state:"waiting",start_date:"2018-09-02",created_at:false,updated_at:false
 featured1 = Featured.create :Project_id => 1
 featured2 = Featured.create :Project_id => 2
+promise1 = Promise.create :Project_id =>1, :value => 2, :condition =>"recieve a nice spaceX hut"
+promise2 = Promise.create :Project_id =>2, :value => 2, :condition =>"recieve a nice spaceX hut"
+promise3 = Promise.create :Project_id =>2, :value => 4, :condition =>"recieve a nice spaceX shirt"
+profile1 = Profile.create :User_id => 1, :name => "Admin", :nacionality => "USA", :age => 34, :sex => "Male"
