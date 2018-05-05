@@ -1,6 +1,9 @@
 
 <p id="notice"><%= notice %></p>
+<%if @profiles.first == nil%>
+<button type="button" class="btn btn-sm btn-outline-secondary"><%= link_to 'New Profile', new_profile_path %></button>
 
+<% else %>
 <h1><%= @profiles.first.name %> </h1>
 
 <div class = "row">
@@ -34,6 +37,7 @@
 
 <%= link_to 'Edit', edit_profile_path(@profiles) %> |
 
+<% end %>
 </div>
 </body>
 </html>
@@ -46,7 +50,7 @@
 
 
 
-<!---
+<!----
 
 <p id="notice"><%= notice %></p>
 

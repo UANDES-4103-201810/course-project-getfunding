@@ -1,19 +1,16 @@
 <p id="notice"><%= notice %></p>
 
-<p>
-  <strong>User:</strong>
-  <%= @user_funds_project.User %>
-</p>
+
 
 <p>
   <strong>Project:</strong>
-  <%= @user_funds_project.Project %>
+  <%= @user_funds_project.Project.name %>
 </p>
 
 <p>
-  <strong>Amount:</strong>
+  <strong>Amount donated:</strong>
   <%= @user_funds_project.amount %>
 </p>
 
-<%= link_to 'Edit', edit_user_funds_project_path(@user_funds_project) %> |
-<%= link_to 'Back', user_funds_projects_path %>
+
+<%= link_to 'Continue', user_funds_projects_path %>
