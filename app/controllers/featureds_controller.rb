@@ -15,6 +15,7 @@ class FeaturedsController < ApplicationController
   # GET /featureds/new
   def new
     @featured = Featured.new
+    @featured.Project_id = session[:current_project_id]
   end
 
   # GET /featureds/1/edit
@@ -25,7 +26,7 @@ class FeaturedsController < ApplicationController
   # POST /featureds.json
   def create
     @featured = Featured.new(featured_params)
-
+    @featured.Project_id = session[:current_project_id]
     respond_to do |format|
       if @featured.save
         format.html { redirect_to @featured, notice: 'Featured was successfully created.' }

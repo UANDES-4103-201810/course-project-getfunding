@@ -8,11 +8,10 @@
 
 <h1>Categories</h1>
 
-<table>
+<table class = "table table-hover -bordered">
   <thead>
     <tr>
-      <th>User</th>
-      <th>Project</th>
+
       <th>Name</th>
       <th colspan="3"></th>
     </tr>
@@ -21,10 +20,8 @@
   <tbody>
     <% @categories.each do |category| %>
       <tr>
-        <td><%= category.User %></td>
-        <td><%= category.Project %></td>
         <td><%= category.name %></td>
-        <td><%= link_to 'Show', category %></td>
+        <td><%= link_to 'Select', category %></td>
         <td><%= link_to 'Edit', edit_category_path(category) %></td>
         <td><%= link_to 'Destroy', category, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>

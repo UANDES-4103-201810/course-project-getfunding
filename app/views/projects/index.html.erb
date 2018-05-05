@@ -1,4 +1,9 @@
 
+<button type="button" class="btn btn-sm btn-outline-secondary"><%= link_to 'New Project', new_project_path %></button>
+<a type="button" class="btn btn-sm btn-outline-secondary" href="/categories">Search by category</a>
+<% if user_signed_in? %>
+  <a type="button" class="btn btn-sm btn-outline-secondary" href="/wishlists">Wishlist</a>
+<% end %>
 
 <div class="album py-5 bg-light">
       <div class="container">
@@ -33,11 +38,7 @@
       </div>
 </div>
 
-<button type="button" class="btn btn-sm btn-outline-secondary"><%= link_to 'New Project', new_project_path %></button>
-<a type="button" class="btn btn-sm btn-outline-secondary" href="/categories">Search by category</a>
-<% if user_signed_in? %>
-  <a type="button" class="btn btn-sm btn-outline-secondary" href="/wishlists">Wishlist</a>
-<% end %>
+
   <!---
 <p id="notice"><%= notice %></p>
 

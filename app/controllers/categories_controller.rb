@@ -5,11 +5,13 @@ class CategoriesController < ApplicationController
   # GET /categories.json
   def index
     @categories = Category.all
+
   end
 
   # GET /categories/1
   # GET /categories/1.json
   def show
+    @categories2 = Category.where(name: session[:category])
   end
 
   # GET /categories/new
