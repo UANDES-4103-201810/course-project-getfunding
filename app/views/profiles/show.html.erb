@@ -4,36 +4,39 @@
 
 <p id="notice"><%= notice %></p>
 
-<p>
-  <strong>User:</strong>
-  <%= @profile.User %>
-</p>
+<h1><%= @profile.name %> </h1>
 
-<p>
-  <strong>Name:</strong>
-  <%= @profile.name %>
-</p>
+<div class = "row">
 
-<p>
-  <strong>Nacionality:</strong>
-  <%= @profile.nacionality %>
-</p>
+<div class=" col-5">
 
-<p>
-  <strong>Age:</strong>
-  <%= @profile.age %>
-</p>
+<div class=" row">
+  <h2>Nacionality:</h2>
+  <h2><%= @profile.nacionality %></h2>
+</div>
 
-<p>
-  <strong>Sex:</strong>
-  <%= @profile.sex %>
-</p>
+  <div class=" row">
+  <h2>Age:</h2>
+ <h2> <%= @profile.age %></h2>
+  </div>
 
-<%= link_to 'Edit', edit_profile_path(@profile) %> |
-<%= link_to 'Back', profiles_path %>
+<div class=" row">
+  <h2>Sex:</h2>
+ <h2> <%= @profile.sex %></h2>
+</div>
+
+</div>
+
+
+<div class = "col-7">
+  <img src="/assets/getfunding.jpg" height="200" width="360">
 
 
 </div>
+</div>
+
+<%= link_to 'Edit', edit_profile_path(@profile) %> |
+<%= link_to 'Back', profiles_path %>
 </div>
 </body>
 </html>

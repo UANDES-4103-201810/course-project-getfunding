@@ -1,7 +1,5 @@
 Rails.application.routes.draw do
-  get 'myprojects/new'
 
-  get 'myprojects/create'
 
   devise_for :users
   resources :featureds
@@ -20,6 +18,7 @@ Rails.application.routes.draw do
   resources :user_buys_promises
   resources :profiles
   get 'home/index'
+  get 'user_projects/index'
 
   root to: "home#index"
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html

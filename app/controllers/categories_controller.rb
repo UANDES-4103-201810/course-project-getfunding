@@ -15,6 +15,8 @@ class CategoriesController < ApplicationController
   # GET /categories/new
   def new
     @category = Category.new
+    @category.User_id = current_user.id
+    @category.Project_id = session[:current_project_id]
   end
 
   # GET /categories/1/edit
@@ -25,7 +27,8 @@ class CategoriesController < ApplicationController
   # POST /categories.json
   def create
     @category = Category.new(category_params)
-
+    @category.User_id = current_user.id
+    @category.Project_id = session[:current_project_id]
     respond_to do |format|
       if @category.save
         format.html { redirect_to @category, notice: 'Category was successfully created.' }

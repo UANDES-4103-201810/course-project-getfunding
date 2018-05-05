@@ -4,12 +4,14 @@ class ProfilesController < ApplicationController
   # GET /profiles
   # GET /profiles.json
   def index
-    @profiles = Profile.all
+    @profiles = Profile.where(User_id: current_user.id)
+
   end
 
   # GET /profiles/1
   # GET /profiles/1.json
   def show
+
   end
 
   # GET /profiles/new
@@ -62,6 +64,11 @@ class ProfilesController < ApplicationController
       format.json { head :no_content }
     end
   end
+
+  def project_index
+    @projects = Projects.all
+  end
+
 
   private
     # Use callbacks to share common setup or constraints between actions.
