@@ -4,8 +4,12 @@ class ProjectsController < ApplicationController
   # GET /projects
   # GET /projects.json
   def index
+
+    if is_user_logged_in?
+      @myprojects = Project.all.where(User_id: current_user.id)
+    end
     @projects = Project.all
-    @myprojects = Project.all.where(User_id: current_user.id)
+    flash.delete(:notice)
   end
 
   # GET /projects/1
