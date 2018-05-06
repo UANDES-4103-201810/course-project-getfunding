@@ -4,7 +4,7 @@ class DescriptivePagesController < ApplicationController
   # GET /descriptive_pages
   # GET /descriptive_pages.json
   def index
-    @descriptive_pages = DescriptivePage.all
+    @descriptive_pages = DescriptivePage.where(Project_id: session[:current_project_id])
   end
 
   # GET /descriptive_pages/1
@@ -15,6 +15,7 @@ class DescriptivePagesController < ApplicationController
   # GET /descriptive_pages/new
   def new
     @descriptive_page = DescriptivePage.new
+    @descriptive_page.Project_id = session[:current_project_id]
   end
 
   # GET /descriptive_pages/1/edit
@@ -25,6 +26,7 @@ class DescriptivePagesController < ApplicationController
   # POST /descriptive_pages.json
   def create
     @descriptive_page = DescriptivePage.new(descriptive_page_params)
+    @descriptive_page.Project_id = session[:current_project_id]
 
     respond_to do |format|
       if @descriptive_page.save

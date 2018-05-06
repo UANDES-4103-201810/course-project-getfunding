@@ -1,7 +1,7 @@
 class Project < ApplicationRecord
   belongs_to :User
-  has_one :descriptive_page
-  has_many :user_funds_proyect, dependent: :destroy
+  has_one :descriptive_page, dependent: :destroy
+  has_many :user_funds_projects, dependent: :destroy
   has_many :promises, dependent: :destroy
   has_many :images, dependent: :destroy
   has_many :videos, dependent: :destroy
@@ -13,7 +13,9 @@ class Project < ApplicationRecord
   before_save  do start_later end
   before_save do state_validation end
   validates :name, uniqueness: true
+
 end
+
 def start_later
   puts start_date.to_date
   puts expiration_date.to_date

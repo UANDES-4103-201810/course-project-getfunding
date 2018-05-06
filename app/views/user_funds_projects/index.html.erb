@@ -21,11 +21,16 @@
         <td><%= user_funds_project.Project.name %></td>
         <td><%= user_funds_project.amount %></td>
          </tr>
-    <% end %>
+
+  <!--  <td><%= link_to 'Destroy', user_funds_project, method: :delete, data: {confirm: 'Are you sure?'} %></td>
+    -->
+  <% end %>
   </tbody>
 </table>
 
 <br>
 
 <%= link_to 'New User Funds Project', new_user_funds_project_path %>
+
+
 </div>
