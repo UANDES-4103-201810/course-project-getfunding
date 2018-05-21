@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20180430034413) do
+ActiveRecord::Schema.define(version: 20180519214043) do
 
   create_table "categories", force: :cascade do |t|
     t.integer "User_id"
@@ -55,19 +55,8 @@ ActiveRecord::Schema.define(version: 20180430034413) do
     t.index ["User_id"], name: "index_profiles_on_User_id"
   end
 
-  create_table "projects", force: :cascade do |t|
-    t.integer "User_id"
-    t.string "name"
-    t.text "description"
-    t.integer "goal"
-    t.integer "money_colected"
-    t.date "expiration_date"
-    t.string "state"
-    t.date "start_date"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-    t.index ["User_id"], name: "index_projects_on_User_id"
-  end
+# Could not dump table "projects" because of following StandardError
+#   Unknown type 'file' for column 'foto'
 
   create_table "promises", force: :cascade do |t|
     t.integer "Project_id"

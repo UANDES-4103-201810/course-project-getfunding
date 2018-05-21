@@ -18,10 +18,11 @@
   <div class="field">
     <%= form.label :amount %>
     <%= form.number_field :amount, id: :user_funds_project_amount %>
+    <% session[:money]= @project.money_colected  %>
+
   </div>
 
   <div class="actions">
     <a><%= form.submit %></a>
-
   </div>
 <% end %>

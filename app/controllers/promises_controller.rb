@@ -29,7 +29,7 @@ class PromisesController < ApplicationController
     @promise.Project_id = session[:current_project_id]
     respond_to do |format|
       if @promise.save
-        format.html { redirect_to @promise, notice: 'Promise was successfully created.' }
+        format.html { redirect_to @promise, notice: 'The promise was successfully created.' }
         format.json { render :show, status: :created, location: @promise }
       else
         format.html { render :new }

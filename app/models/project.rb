@@ -14,6 +14,7 @@ class Project < ApplicationRecord
   before_save do state_validation end
   validates :name, uniqueness: true
 
+
 end
 
 def start_later

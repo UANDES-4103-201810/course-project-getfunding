@@ -11,6 +11,8 @@
     </div>
   <% end %>
 
+
+  <!----
   <div class="field">
     <%= form.label :User_id %>
     <%= form.text_field :User_id, id: :user_buys_promise_User_id %>
@@ -20,7 +22,9 @@
     <%= form.label :Promise_id %>
     <%= form.text_field :Promise_id, id: :user_buys_promise_Promise_id %>
   </div>
-
+  --->
+  <% session[:money]= @project.money_colected  %>
+  <%session[:promise_value]= @promise.value %>
   <div class="actions">
     <%= form.submit %>
   </div>

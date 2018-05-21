@@ -4,8 +4,8 @@ class CategoriesController < ApplicationController
   # GET /categories
   # GET /categories.json
   def index
-    @categories = Category.all
-
+    @categories = Category.all.uniq{|category| category.name}
+    #@categories = Category.all
   end
 
   # GET /categories/1

@@ -1,3 +1,5 @@
+<% session[:promise] = @promise.id %>
+
 
   <div class=col-4>
 
@@ -5,11 +7,11 @@
 
 
 <p id="notice"><%= notice %></p>
-
+<!---
 <p>
   <strong>Project:</strong>
   <%= @promise.Project %>
-</p>
+</p>--->
 
 <p>
   <strong>Value:</strong>
@@ -21,6 +23,7 @@
   <%= @promise.condition %>
 </p>
 
+    <a href="/user_buys_promises/new"  class="btn btn-info" style="width: 100%; background-color: cornflowerblue; margin: 5px; border-radius: 25px">Buy</a>
 <%= link_to 'Edit', edit_promise_path(@promise) %> |
 <%= link_to 'Back', promises_path %>
 

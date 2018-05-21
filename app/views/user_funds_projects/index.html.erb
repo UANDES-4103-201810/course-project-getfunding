@@ -27,10 +27,35 @@
   <% end %>
   </tbody>
 </table>
+  <h1>Promises you bought</h1>
+
+  <table class = "table table-hover -bordered">
+    <thead>
+    <tr>
+
+      <th>Project</th>
+      <th>Promise condition</th>
+      <th>Amount</th>
+      <th colspan="3"></th>
+    </tr>
+    </thead>
+
+    <tbody>
+    <% @user_buys_promises.each do |user_buys_promise| %>
+      <tr>
+
+        <td><%= user_buys_promise.Promise.Project.name %></td>
+        <td><%= user_buys_promise.Promise.condition %></td>
+        <td><%= user_buys_promise.Promise.value %></td>
+      </tr>
+
+
+    <% end %>
+    </tbody>
+  </table>
 
 <br>
 
-<%= link_to 'New User Funds Project', new_user_funds_project_path %>
 
 
 </div>

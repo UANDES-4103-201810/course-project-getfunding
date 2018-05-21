@@ -53,6 +53,11 @@
               <a class="btn btn-primary m-1" style="color:#FFFFFF" href="/user_funds_projects">History</a>
             </li>
 
+            <%if session[:admin] %>
+            <li class="nav-item active">
+              <a class="btn btn-primary m-1" style="color:#FFFFFF" href="/admin_sees_user/index">Users</a>
+            </li>
+            <% end %>
           <%else%>
             <li class="nav-item active">
               <a class="btn btn-primary m-1" style="color:#FFFFFF" href="/home/index">Home</a>
@@ -61,6 +66,7 @@
             <li class="nav-item active">
               <a class="btn btn-primary m-1" style="color:#FFFFFF" href="/projects">Projects</a>
             </li>
+
 
           <%end %>
 
@@ -85,7 +91,8 @@
   </nav>
   <body>
   <div class="container">
-  <p class="notice"><%= notice %></p>
+
+  <!--<p class="notice"><%= notice %></p>  --->
   <p class="alert"><%= alert %></p>
     <%= yield %>
   </div>

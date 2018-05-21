@@ -1,11 +1,12 @@
+<% if user_signed_in? %>
+<% if @user.admin.nil?%>
+  <% session[:admin] =  false%>
+  <%else%>
+  <% session[:admin] =  @user.admin%>
+  <%end%>
+<% end %>
 
   <h1>Best of the week</h1>
-
-
-
-
-
-
 
 <div class="album py-12 album-transparent ">
   <div class="container ">

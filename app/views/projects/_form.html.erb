@@ -54,6 +54,15 @@
     <%= form.date_select :start_date, id: :project_start_date %>
   </div>
 
+  <!--
+  <div class="field">
+  <%= form_for @project, url: projects_path, html: {multipart: true} do |form| %>
+    <%= form.file_field :avatar %>
+      <%= form.submit %>
+      <%end%>
+  </div>
+-->
+
   <div class="actions">
     <%= form.submit %>
   </div>

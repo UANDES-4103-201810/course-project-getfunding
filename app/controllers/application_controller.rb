@@ -5,7 +5,10 @@ class ApplicationController < ActionController::Base
   Rails.application.config.session_store :cookie_store, key: "money"
   Rails.application.config.session_store :cookie_store, key: "current_project_id"
   Rails.application.config.session_store :cookie_store, key: "category"
-
+  Rails.application.config.session_store :cookie_store, key: "money"
+  Rails.application.config.session_store :cookie_store, key: "admin"
+  Rails.application.config.session_store :cookie_store, key: "promise"
+  Rails.application.config.session_store :cookie_store, key: "promise_value"
 
 
 @wishlist = Wishlist.all

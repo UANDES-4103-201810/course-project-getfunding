@@ -22,6 +22,7 @@ class ProjectsController < ApplicationController
     @project = Project.new
     @project.User_id = current_user.id
     @project.state = "waiting"
+    @image = Image.new
   end
 
   # GET /projects/1/edit
@@ -35,9 +36,10 @@ class ProjectsController < ApplicationController
     @project.User_id = current_user.id
     @project.state = "waiting"
 
+
     respond_to do |format|
       if @project.save
-        format.html { redirect_to @project, notice: 'Project was successfully created.' }
+        format.html { redirect_to @project, notice: 'Your project was successfully created.' }
         format.json { render :show, status: :created, location: @project }
       else
         format.html { render :new }
@@ -81,4 +83,8 @@ class ProjectsController < ApplicationController
     def project_params
       params.require(:project).permit(:User_id, :name, :description, :goal, :money_colected, :expiration_date, :state, :start_date)
     end
+
+
+
+
 end

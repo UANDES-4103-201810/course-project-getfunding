@@ -18,6 +18,7 @@ Rails.application.routes.draw do
   resources :user_buys_promises
   resources :profiles
   get 'home/index'
+  get 'admin_sees_user/index'
   get 'user_projects/index'
 
   root to: "home#index"
