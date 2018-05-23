@@ -1,7 +1,10 @@
-<%= form_for @image do |f|%>
-  <%= f.file_field :picture %>
-  <%= f.submit "Add image"%>
-  <% end%>
+<%= form_for @image, url: images_path, html: { multipart: true } do |form| %>
+  <%= form.file_field :avatar %>
+  <%= form.label :Project_id %>
+  <%= form.text_field :Project_id, id: :image_Project_id %>
+  <%= form.submit %>
+
+<% end %>
 
 
 
