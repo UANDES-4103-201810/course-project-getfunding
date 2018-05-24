@@ -29,7 +29,7 @@ class FeaturedsController < ApplicationController
     @featured.Project_id = session[:current_project_id]
     respond_to do |format|
       if @featured.save
-        format.html { redirect_to @featured, notice: 'The project was successfully selected as best of the week.' }
+        format.html { redirect_to home_index_url, notice: 'The project was successfully selected as best of the week.' }
         format.json { render :show, status: :created, location: @featured }
       else
         format.html { render :new }

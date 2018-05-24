@@ -7,7 +7,9 @@
         <div class = "container">
           <h1><%= @project.name %></h1>
           <% if Image.find_by(Project_id: session[:current_project_id]) != nil %>
-<%= image_tag Image.find_by(Project_id: session[:current_project_id]).avatar.url(:medium) %>
+
+<%= image_tag Image.find_by(Project_id: session[:current_project_id]).avatar.url(:medium), :class=> "card-img-top" %>
+
             <% end%>
           <!---
             <img class="card-img-top"  style="height: 500px; width: 100%; display: block;" src="/assets/cohete.jpg"> -->
@@ -31,14 +33,18 @@
         <a href="/promises"  class="btn btn-info" style="width: 100%; background-color: cornflowerblue; margin: 5px; border-radius: 25px">Promises</a>
           <a  class="btn btn-info" style="width: 100%; background-color: cornflowerblue; margin: 5px; border-radius: 25px" href="/categories/new">Add to category</a>
           <a href="/descriptive_pages"  class="btn btn-info" style="width: 100%; background-color: cornflowerblue; margin: 5px; border-radius: 25px">Project site</a>
-          <a href="/images/new"  class="btn btn-info" style="width: 100%; background-color: cornflowerblue; margin: 5px; border-radius: 25px">Add image</a>
+
+          <% if  @project.User_id == current_user.id || session[:admin]%>
+            <a href="/images/new"  class="btn btn-info" style="width: 100%; background-color: cornflowerblue; margin: 5px; border-radius: 25px">Add image</a>
+            <button type="button" class="btn btn-sm btn-outline-secondary" style="width: 100%; background-color: darkred ; margin: 5px; border-radius: 25px"><%= link_to 'Destroy', @project, method: :delete, data: { confirm: 'Are you sure?' } %></button>
 
 
+      <% end %>
 
-<% else %>
+      <% else %>
           <a href="/promises"  class="btn btn-info" style="width: 100%; background-color: cornflowerblue; margin: 5px; border-radius: 25px">Promises</a>
           <a href="/descriptive_pages"  class="btn btn-info" style="width: 100%; background-color: cornflowerblue; margin: 5px; border-radius: 25px">Project site</a>
-<%end%>
+        <%end%>
         <% if session[:admin] %>
           <a  class="btn btn-info" style="width: 100%; background-color: cornflowerblue; margin: 5px; border-radius: 25px" href="/featureds/new" >Add to featured</a>
         <% end %>
@@ -47,8 +53,6 @@
               </div>
             </div>
           </div>
-
-<button type="button" class="btn btn-sm btn-outline-secondary"><%= link_to 'Destroy', @project, method: :delete, data: { confirm: 'Are you sure?' } %></button>
 
 
 

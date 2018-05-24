@@ -15,7 +15,9 @@
         <div class="col-md-4">
           <div class="card mb-4 box-shadow" style="border-radius: 25px">
             <h1><%= featured.Project.name %></h1>
-            <img class="card-img-top" data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp; text=Falcon Heavy" alt="cohete feed" style="height: 225px; width: 100%; display: block;" src="/assets/cohete.jpg">
+            <% if Image.find_by(Project_id: featured.Project.id) != nil %>
+              <%= image_tag Image.find_by(Project_id: featured.Project.id).avatar.url, :class=> "card-img-top" %>
+            <% end%>
             <div class="card-body">
               <h3>Goal</h3>
               <p class="card-text"><%= featured.Project.goal %></p>
@@ -23,7 +25,7 @@
               <p class="card-text"><%= featured.Project.money_colected %></p>
               <div class="d-flex justify-content-between align-items-center">
                 <div class="btn-group">
-                  <% if user_signed_in? && featured.Project.User_id == current_user.id%>
+                  <% if (user_signed_in? && featured.Project.User_id == current_user.id ) || session[:admin]%>
                     <button type="button" class="btn btn-sm btn-outline-secondary"><%= link_to 'Show', featured.Project %></button>
                     <button type="button" class="btn btn-sm btn-outline-secondary"><%= link_to 'Edit', edit_project_path(featured.Project) %></button>
                     <button type="button" class="btn btn-sm btn-outline-secondary"><%= link_to 'Destroy', featured.Project, method: :delete, data: { confirm: 'Are you sure?' } %></button>
