@@ -7,7 +7,7 @@
         <div class = "container">
           <h1><%= @project.name %></h1>
           <% if Image.find_by(Project_id: session[:current_project_id]) != nil %>
-<%= image_tag Image.find_by(Project_id: session[:current_project_id]).avatar.url(:medium)%>
+<%= image_tag Image.find_by(Project_id: session[:current_project_id]).avatar.url(:medium) %>
             <% end%>
           <!---
             <img class="card-img-top"  style="height: 500px; width: 100%; display: block;" src="/assets/cohete.jpg"> -->

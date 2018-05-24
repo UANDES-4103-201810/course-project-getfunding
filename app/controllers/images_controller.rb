@@ -25,7 +25,7 @@ class ImagesController < ApplicationController
   # POST /images
   # POST /images.json
   def create
-    @image = Image.create(Project_id: params[:Project_id], avatar: params[:avatar])
+    @image = Image.new(image_params)
 @image.Project_id = session[:current_project_id]
     respond_to do |format|
       if @image.save
@@ -70,6 +70,6 @@ class ImagesController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def image_params
-      params.require(:image).permit(:Project_id, :avatar)
+      params.require(:image).permit(:Project_id,:avatar, :avatar_file_name, :avatar_content_type, :avatar_file_size, :avatar_updated_at)
     end
 end
