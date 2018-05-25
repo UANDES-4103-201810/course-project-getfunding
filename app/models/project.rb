@@ -5,6 +5,7 @@ class Project < ApplicationRecord
   has_many :promises, dependent: :destroy
   has_many :images, dependent: :destroy
   has_many :videos, dependent: :destroy
+  has_many :wishlist, dependent: :destroy
   validates :goal,  numericality: {:greater_than_or_equal_to => 0}
   validates :money_colected,  numericality: {:greater_than_or_equal_to => 0}
   validates :name, length: {in: 2..20}
