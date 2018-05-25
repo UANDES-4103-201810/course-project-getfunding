@@ -1,7 +1,37 @@
 
+<%= form_for @profile, url: profiles_path, html: { multipart: true } do |form| %>
+  <div class="field">
+  <%= form.file_field :avatar %>
+  </div>
+
+  <div class="field">
+    <%= form.label :name %>
+    <%= form.text_field :name, id: :profile_name %>
+  </div>
+
+  <div class="field">
+    <%= form.label :nacionality %>
+    <%= form.text_field :nacionality, id: :profile_nacionality %>
+  </div>
+
+  <div class="field">
+    <%= form.label :age %>
+    <%= form.number_field :age, id: :profile_age %>
+  </div>
+
+  <div class="field">
+    <%= form.label :sex %>
+    <%= form.text_field :sex, id: :profile_sex %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
 
 
+<% end %>
 
+<!--
 
 <%= form_with(model: profile, local: true) do |form| %>
   <% if profile.errors.any? %>
@@ -16,11 +46,11 @@
     </div>
   <% end %>
 
- <!-- <div class="field">
+
     <%= form.label :User_id %>
     <%= form.text_field :User_id, id: :profile_User_id %>
   </div>
-  -->
+
 
   <div class="field">
     <%= form.label :name %>
@@ -53,3 +83,4 @@
 </body>
 </html>
 
+--->

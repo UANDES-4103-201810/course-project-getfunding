@@ -29,14 +29,19 @@
 
 
 <div class = "col-7">
-  <img src="/assets/getfunding.jpg" height="200" width="360">
+  <% if @profile.avatar_file_name != nil %>
+
+    <%= image_tag @profile.avatar.url(:medium), :class=> "card-img-top" %>
+
+  <% end%>
 
 
 </div>
 </div>
 
 <%= link_to 'Edit', edit_profile_path(@profile) %> |
-<%= link_to 'Back', profiles_path %>
+<%= link_to 'Back', profiles_path %> |
+<%= link_to 'Destroy', @profile, method: :delete, data: { confirm: 'Are you sure?' } %>
 </div>
 </body>
 </html>
