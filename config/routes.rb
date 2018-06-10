@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
 
 
-  devise_for :users
+  devise_for :users, controller: {:omniauth_callbacks  => 'callbacks'}
   resources :featureds
   resources :descriptive_pages
   resources :videos
@@ -19,7 +19,9 @@ Rails.application.routes.draw do
   resources :profiles
   get 'home/index'
   get 'admin_sees_user/index'
+  post 'admin_sees_user/make_admin'
   get 'user_projects/index'
+  get 'search/index'
 
   root to: "home#index"
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html

@@ -22,6 +22,9 @@
       <tr>
         <td><%= user.email %></td>
         <td><%= user.admin %></td>
+        <td><button type="button" class="btn btn-sm btn-outline-secondary"> <%= link_to 'admin', admin_sees_user_make_admin_path, method: :make_admin %> <% session[:target] = user.id %>  </button></td>
+
+
 
     <% end %>
     </tbody>

@@ -1,0 +1,42 @@
+
+<%= form_tag("/search/index", method: "get") do %>
+  <%= label_tag(:q, "Search for:") %>
+  <%= text_field_tag(:name) %>
+  <%= submit_tag("Search") %>
+<% end %>
+
+
+<div class="album py-5 album-transparent">
+    <div class="container">
+        <div class="row">
+            <% @projects.each do |project| %>
+            <div class="col-md-4">
+                <div class="card mb-4 box-shadow" style="border-radius: 25px">
+                    <h1><%= project.name %></h1>
+                    <% if Image.find_by(Project_id: project.id) != nil %>
+                    <%= image_tag Image.find_by(Project_id: project.id).avatar.url, :class=> "card-img-top" %>
+                    <% end%>
+                    <div class="card-body">
+                        <h3>Goal</h3>
+                        <p class="card-text"><%= project.goal %></p>
+                        <h3>Colected</h3>
+                        <p class="card-text"><%= project.money_colected %></p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                                <% if (user_signed_in? && project.User_id == current_user.id) || session[:admin]%>
+                                <button type="button" class="btn btn-sm btn-outline-secondary"><%= link_to 'Show', project %></button>
+                                <button type="button" class="btn btn-sm btn-outline-secondary"><%= link_to 'Edit', edit_project_path(project) %></button>
+                                <button type="button" class="btn btn-sm btn-outline-secondary"><%= link_to 'Destroy', project, method: :delete, data: { confirm: 'Are you sure?' } %></button>
+                                <%else%>
+                                <button type="button" class="btn btn-sm btn-outline-secondary"><%= link_to 'Show', project %></button>
+                                <%end%>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <% end %>
+        </div>
+
+    </div>
+</div>

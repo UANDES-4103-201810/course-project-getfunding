@@ -9,6 +9,7 @@ class ApplicationController < ActionController::Base
   Rails.application.config.session_store :cookie_store, key: "admin"
   Rails.application.config.session_store :cookie_store, key: "promise"
   Rails.application.config.session_store :cookie_store, key: "promise_value"
+  Rails.application.config.session_store :cookie_store, key: "target"
 
 
 @wishlist = Wishlist.all

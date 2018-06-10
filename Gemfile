@@ -57,3 +57,7 @@ gem 'devise'
 gem 'jquery-rails'
 gem "paperclip", "~> 6.0.0"
 #gem 'autoprefixer-rails'
+
+gem 'therubyracer'
+gem 'omniauth'
+gem 'omniauth-facebook'
