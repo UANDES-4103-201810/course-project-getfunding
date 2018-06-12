@@ -10,11 +10,13 @@ class ProjectsController < ApplicationController
     end
     @projects = Project.all
     flash.delete(:notice)
+    @promises = Promise.where(Project_id: session[:current_project_id])
   end
 
   # GET /projects/1
   # GET /projects/1.json
   def show
+    @promises = Promise.where(Project_id: session[:current_project_id])
   end
 
   # GET /projects/new
