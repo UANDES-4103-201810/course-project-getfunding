@@ -31,7 +31,7 @@ end
 
 def state_validation
   if state != "waiting"
-    if state != "approved"
+    if state != "funded"
       puts("invalid")
       throw :abort
     end

@@ -34,6 +34,7 @@ class UserFundsProjectsController < ApplicationController
     @user_funds_project.User_id= current_user.id
     @user_funds_project.Project_id= session[:current_project_id]
     @project = Project.find_by(id: session[:current_project_id])
+    @user = User.find_by(id: current_user.id)
 
 
 
@@ -41,13 +42,17 @@ class UserFundsProjectsController < ApplicationController
       if @user_funds_project.save
         money = session[:money] + user_funds_project_params[:amount].to_i
         Project.update(session[:current_project_id], :money_colected => money)
-        UserdonationMailer.with(user:  current_user).funding_email.deliver_later
+
+        UserdonationMailer.with(user: @user).funding_email.deliver_later
         format.html { redirect_to @user_funds_project, notice: 'Transaction confirmed. Thank you.' }
         format.json { render :show, status: :created, location: @user_funds_project }
       else
         format.html { render :new }
         format.json { render json: @user_funds_project.errors, status: :unprocessable_entity }
       end
+    end
+    if @project.money_colected > @project.goal
+      Project.update(session[:current_project_id], :state => "funded")
     end
   end
 

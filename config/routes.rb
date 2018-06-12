@@ -19,7 +19,7 @@ Rails.application.routes.draw do
   resources :profiles
   get 'home/index'
   get 'admin_sees_user/index'
-  post 'admin_sees_user/make_admin'
+  get 'admin_sees_user/make_admin'
   get 'user_projects/index'
   get 'search/index'
 

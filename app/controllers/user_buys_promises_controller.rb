@@ -46,6 +46,9 @@ class UserBuysPromisesController < ApplicationController
         format.json { render json: @user_buys_promise.errors, status: :unprocessable_entity }
       end
     end
+    if @project.money_colected > @project.goal
+      Project.update(session[:current_project_id], :state => "funded")
+    end
   end
 
   # PATCH/PUT /user_buys_promises/1

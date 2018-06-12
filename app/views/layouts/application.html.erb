@@ -58,6 +58,11 @@
               <a class="btn btn-primary m-1" style="color:#FFFFFF" href="/admin_sees_user/index">Users</a>
             </li>
             <% end %>
+
+            <li class="nav-item active">
+              <a class="btn btn-primary m-1" style="color:#FFFFFF" href="/search/index">Search</a>
+            </li>
+
           <%else%>
             <li class="nav-item active">
               <a class="btn btn-primary m-1" style="color:#FFFFFF" href="/home/index">Home</a>
@@ -65,6 +70,10 @@
 
             <li class="nav-item active">
               <a class="btn btn-primary m-1" style="color:#FFFFFF" href="/projects">Projects</a>
+            </li>
+
+            <li class="nav-item active">
+              <a class="btn btn-primary m-1" style="color:#FFFFFF" href="/search/index">Search</a>
             </li>
 
 
@@ -95,13 +104,13 @@
   </nav>
   <body>
   <script>
-
       window.fbAsyncInit = function() {
           FB.init({
-              appId :'178616062854553',
-              cookie :true,
-              xfbml :true,
-              version :'3.0'});
+              appId      : '{178616062854553}',
+              cookie     : true,
+              xfbml      : true,
+              version    : '{3.0}'
+          });
 
           FB.AppEvents.logPageView();
 
@@ -119,9 +128,26 @@
 
   <div class="container">
 
-  <!--<p class="notice"><%= notice %></p>  --->
-  <p class="alert"><%= alert %></p>
+    <% if flash[:notice] %>
+      <div class="alert alert-success" >
+        <button type="button" class="close" data-dismiss = "alert">&times;</button>
+        <%= flash[:notice] %>
+      </div>
+      <% elsif flash[:error]%>
+      <div class="alert alert-error">
+        <button type="button" class="close" data-dismiss = "alert">&times;</button>
+        <%= flash[:error] %>
+      </div>
+    <% elsif flash[:alert]%>
+      <div class="alert ">
+        <button type="button" class="close" data-dismiss = "alert">&times;</button>
+        <%= flash[:alert] %>
+      </div>
+      <% end %>
 
+  <!--<p class="notice"><%= notice %></p>
+  <p class="alert"><%= alert %></p>
+-->
     <%= yield %>
 
 

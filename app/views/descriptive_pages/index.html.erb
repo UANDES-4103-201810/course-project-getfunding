@@ -26,5 +26,6 @@
 </table>
 
 <br>
-
+<%if  @project.User_id == current_user.id || session[:admin] %>
 <%= link_to 'New Descriptive Page', new_descriptive_page_path %>
+<% end %>

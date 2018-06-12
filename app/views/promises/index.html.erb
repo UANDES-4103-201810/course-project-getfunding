@@ -20,7 +20,7 @@
                     <button type="button" class="btn btn-sm btn-outline-secondary"><%= link_to 'Edit', edit_promise_path(promise) %></button>
                     <button type="button" class="btn btn-sm btn-outline-secondary"><%= link_to 'Destroy', promise, method: :delete, data: {confirm: 'Are you sure?'} %></button>
                     <%else%>
-                      <button type="button" class="btn btn-sm btn-outline-secondary"> Buy</button>
+                      <button type="button" class="btn btn-sm btn-outline-secondary"> <%= link_to 'Buy', promise %></button>
                     <%end%>
 
                       </div>

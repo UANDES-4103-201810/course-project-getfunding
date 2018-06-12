@@ -5,6 +5,7 @@ class DescriptivePagesController < ApplicationController
   # GET /descriptive_pages.json
   def index
     @descriptive_pages = DescriptivePage.where(Project_id: session[:current_project_id])
+    @project = Project.find_by(id: session[:current_project_id])
   end
 
   # GET /descriptive_pages/1

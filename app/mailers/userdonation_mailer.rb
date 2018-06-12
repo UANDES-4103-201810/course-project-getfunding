@@ -3,7 +3,8 @@ class UserdonationMailer < ApplicationMailer
 
   def funding_email
     @user = params[:user]
-    mail(to: @user.email, subject: 'Thanks for your donation')
+    @url = "localhost:3000"
+    mail(to: @user.email , subject: 'Thanks for your donation')
   end
 
 end

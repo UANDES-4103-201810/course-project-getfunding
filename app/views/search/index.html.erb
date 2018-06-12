@@ -1,6 +1,6 @@
 
 <%= form_tag("/search/index", method: "get") do %>
-  <%= label_tag(:q, "Search for:") %>
+  <%= label_tag(:project, "Search for:") %>
   <%= text_field_tag(:name) %>
   <%= submit_tag("Search") %>
 <% end %>
@@ -21,6 +21,8 @@
                         <p class="card-text"><%= project.goal %></p>
                         <h3>Colected</h3>
                         <p class="card-text"><%= project.money_colected %></p>
+                        <h3>Status</h3>
+                        <p class="card-text"><%= project.state %></p>
                         <div class="d-flex justify-content-between align-items-center">
                             <div class="btn-group">
                                 <% if (user_signed_in? && project.User_id == current_user.id) || session[:admin]%>
