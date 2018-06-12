@@ -20,6 +20,7 @@ Rails.application.routes.draw do
   get 'home/index'
   get 'admin_sees_user/index'
   get 'admin_sees_user/make_admin'
+  get 'admin_sees_user/destroy'
   get 'user_projects/index'
   get 'search/index'
 

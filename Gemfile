@@ -61,3 +61,6 @@ gem "paperclip", "~> 6.0.0"
 gem 'therubyracer'
 gem 'omniauth'
 gem 'omniauth-facebook'
+
+gem 'redcarpet', '~> 3.3', '>= 3.3.4'
+gem 'cancancan', '~> 2.0'

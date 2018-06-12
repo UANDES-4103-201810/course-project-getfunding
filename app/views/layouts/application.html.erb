@@ -103,7 +103,7 @@
 
   </nav>
   <body>
-  <script>
+  <!--<script>
       window.fbAsyncInit = function() {
           FB.init({
               appId      : '{178616062854553}',
@@ -123,7 +123,7 @@
           js.src = "https://connect.facebook.net/en_US/sdk.js";
           fjs.parentNode.insertBefore(js, fjs);
       }(document, 'script', 'facebook-jssdk'));
-  </script>
+  </script>-->
 
 
   <div class="container">
@@ -134,12 +134,12 @@
         <%= flash[:notice] %>
       </div>
       <% elsif flash[:error]%>
-      <div class="alert alert-error">
+      <div class="alert alert-danger">
         <button type="button" class="close" data-dismiss = "alert">&times;</button>
         <%= flash[:error] %>
       </div>
     <% elsif flash[:alert]%>
-      <div class="alert ">
+      <div class="alert alert-warning">
         <button type="button" class="close" data-dismiss = "alert">&times;</button>
         <%= flash[:alert] %>
       </div>

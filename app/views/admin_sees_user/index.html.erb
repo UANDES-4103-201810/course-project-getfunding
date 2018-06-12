@@ -3,7 +3,8 @@
 
 
 
-  <p id="notice"><%= notice %></p>
+  <% if session[:admin] %>
+
 
   <h1>User</h1>
 
@@ -22,7 +23,10 @@
       <tr>
         <td><%= user.email %></td>
         <td><%= user.admin %></td>
-        <td><button type="button" class="btn btn-sm btn-outline-secondary"> <%= link_to 'admin', admin_sees_user_make_admin_path, :with => id = user.id   %> <% session[:target] = user.id %></button></td>
+        <td><button type="button" class="btn btn-sm btn-outline-secondary"> <%= link_to 'Make admin',  admin_sees_user_make_admin_path(id: user.id) %> </button>
+        <td><button type="button" class="btn btn-sm btn-outline-secondary"> <%= link_to 'Destroy',  admin_sees_user_destroy_path(id: user.id) %> </button>
+
+        </td>
 
 
 
@@ -32,3 +36,5 @@
 
   <br>
 </div>
+
+<% end %>

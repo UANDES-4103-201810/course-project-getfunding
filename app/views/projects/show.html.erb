@@ -13,14 +13,14 @@
             <% end%>
           <!---
             <img class="card-img-top"  style="height: 500px; width: 100%; display: block;" src="/assets/cohete.jpg"> -->
-            <p><%= @project.description %> </p>
+            <p> <%= markdown(@project.description) %></p>
 
         </div>
       </div>
       <div class=" col-5">
         <div class="container" style="background-color: lightcyan; border-radius: 25px; margin: 10px;">
           <h2>Objective</h2>
-          <%= @project.goal %>
+          <%=@project.goal %>
           <h2>Colected</h2>
           <%= @project.money_colected%>
           <h2>End of project</h2>
