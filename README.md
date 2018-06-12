@@ -7,10 +7,10 @@ Instruction: in order to run the page for the first time, it is necesary to do f
 The administrator account  has as email: admin@gmail.com y his password is admin123. This acount is loaded when doing rails db:seed.
 
 Errors:
--the projects loaded as seeds has no images, they have to be uploaded by the administrator, who is the owner of those projects
--there are lists of objects that doesnt load corectly at the first time, it is necesary to refresh the page to corect it. This happens usualy on categories and in the promises of a project.
-- an email is send when funding, but I wasnt able to implement the validation trough it. In order to allow the normal progres of the page, this last feature was eliminated, so it is not necesary to confirm the transaction using the email, but still an email will be recieved as notification.
-- is not posible to sign in using facebbok, due to an unknown error, which i wasnt able to fix.
+- The projects loaded as seeds has no images, they have to be uploaded by the administrator, who is the owner of those projects
+- There are lists of objects that doesnt load corectly at the first time, it is necesary to refresh the page to corect it. This happens usualy on categories and in the promises of a project.
+- An email is send when funding, but I wasnt able to implement the validation trough it. In order to allow the normal progres of the page, this last feature was eliminated, so it is not necesary to confirm the transaction using the email, but still an email will be recieved as notification.
+- Is not posible to sign in using facebbok, due to an unknown error, which i wasnt able to fix.
 
 
 Instrucciones: cuando se hace funcionar la pagina por primera vez se debe hacer primero db:migrate y despues db:seed.
