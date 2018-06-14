@@ -1,8 +1,30 @@
-<a type="button" class="btn btn-sm btn-outline-secondary" style=" background-color: cornflowerblue; margin: 5px; border-radius: 25px"  href="/projects/new">New project</a>
-<a type="button" class="btn btn-sm btn-outline-secondary" style=" background-color: cornflowerblue; margin: 5px; border-radius: 25px"  href="/categories">Search by category</a>
-<% if user_signed_in? %>
-  <a type="button" class="btn btn-sm btn-outline-secondary" style=" background-color: cornflowerblue; margin: 5px; border-radius: 25px"  href="/wishlists">Wishlist</a>
-<% end %>
+<nav class="navbar navbar-expand-md navbar-light bg-none sticky-top">
+  <div class="container-fluid">
+
+    <button class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarResponsive">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item active">
+          <a class="btn btn-primary m-1" style="color:#FFFFFF"  role="button" href="/projects/new">New project</a>
+        </li>
+        <li class="nav-item active">
+          <a class="btn btn-primary m-1" style="color:#FFFFFF"  role="button"  href="/categories">Search by category</a>
+        </li>
+        <% if user_signed_in? %>
+          <li class="nav-item active">
+            <a class="btn btn-primary m-1" style="color:#FFFFFF"  role="button" href="/wishlists">Wishlist</a>
+          </li>
+        <% end %>
+
+      </ul>
+    </div>
+  </div>
+
+
+</nav>
 
 <div class="album py-5 album-transparent">
   <div class="container">

@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
 
 
-  devise_for :users, controller: {:omniauth_callbacks  => 'callbacks'}
+  devise_for :users, controller: {:omniauth_callbacks => 'callbacks'}
   resources :featureds
   resources :descriptive_pages
   resources :videos

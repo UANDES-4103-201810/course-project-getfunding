@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20180612161647) do
+ActiveRecord::Schema.define(version: 20180614040816) do
 
   create_table "categories", force: :cascade do |t|
     t.integer "User_id"
@@ -101,8 +101,6 @@ ActiveRecord::Schema.define(version: 20180612161647) do
     t.integer "amount"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.boolean "email_confirmed"
-    t.string "confirm_token"
     t.index ["Project_id"], name: "index_user_funds_projects_on_Project_id"
     t.index ["User_id"], name: "index_user_funds_projects_on_User_id"
   end
@@ -123,6 +121,7 @@ ActiveRecord::Schema.define(version: 20180612161647) do
     t.datetime "updated_at", null: false
     t.string "provider"
     t.string "uid"
+    t.string "name"
     t.index ["email"], name: "index_users_on_email", unique: true
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
   end
