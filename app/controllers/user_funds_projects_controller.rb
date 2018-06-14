@@ -39,17 +39,28 @@ class UserFundsProjectsController < ApplicationController
 
 
     respond_to do |format|
+
       if @user_funds_project.save
+
+        UserdonationMailer.funding_email(@user, @user_funds_project).deliver
+        flash[:succes] = "Please confirm ypu transaction to continue"
+
+        @user_funds_project.confirm
+
+
+
         money = session[:money] + user_funds_project_params[:amount].to_i
         Project.update(session[:current_project_id], :money_colected => money)
 
-        UserdonationMailer.funding_email(@user).deliver
+
         format.html { redirect_to @user_funds_project, notice: 'Transaction confirmed. Thank you.' }
         format.json { render :show, status: :created, location: @user_funds_project }
       else
+        flash[:error] = "Something is wrong"
         format.html { render :new }
         format.json { render json: @user_funds_project.errors, status: :unprocessable_entity }
       end
+
     end
     if @project.money_colected > @project.goal
       Project.update(session[:current_project_id], :state => "funded")
@@ -90,4 +101,18 @@ class UserFundsProjectsController < ApplicationController
     def user_funds_project_params
       params.require(:user_funds_project).permit(:User_id, :Project_id, :amount)
     end
+
+  def confirm_email
+    user_funds_project = UserFundsProject.find_by(params[:id])
+    if user_funds_project
+      user_funds_project.confirm
+      flash[:succes] = "Funding completed"
+    else
+      flash[:error] = "Something went wrong"
+      redirect_to project_path
+    end
+  end
+
+
+
 end

@@ -9,7 +9,12 @@ Rails.application.routes.draw do
   resources :promises
   resources :wishlists
   resources :categories
-  resources :user_funds_projects
+  resources :user_funds_projects do
+    member do
+      get :confirm_email
+
+    end
+  end
   resources :projects
   post "/sessions/new", to: "sessions#create"
 
@@ -25,5 +30,10 @@ Rails.application.routes.draw do
   get 'search/index'
 
   root to: "home#index"
+
+
+
+
+
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end
