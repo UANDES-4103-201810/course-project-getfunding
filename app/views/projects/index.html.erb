@@ -1,4 +1,5 @@
-<nav class="navbar navbar-expand-md navbar-light bg-none sticky-top">
+
+<nav class="navbar navbar-expand-md navbar-light bg-none ">
   <div class="container-fluid">
 
     <button class="navbar-toggler" type="button" data-toggle="collapse"
@@ -7,13 +8,14 @@
     </button>
     <div class="collapse navbar-collapse" id="navbarResponsive">
       <ul class="navbar-nav ml-auto">
-        <li class="nav-item active">
-        <a class="btn btn-primary m-1" style="color:#FFFFFF"  role="button" href="/projects/new">New project</a>
-        </li>
+
         <li class="nav-item active">
           <a class="btn btn-primary m-1" style="color:#FFFFFF"  role="button"  href="/categories">Search by category</a>
         </li>
           <% if user_signed_in? %>
+          <li class="nav-item active">
+            <a class="btn btn-primary m-1" style="color:#FFFFFF"  role="button" href="/projects/new">New project</a>
+          </li>
           <li class="nav-item active">
             <a class="btn btn-primary m-1" style="color:#FFFFFF"  role="button" href="/wishlists">Wishlist</a>
           </li>
